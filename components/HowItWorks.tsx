@@ -17,12 +17,12 @@ const faqs = [
 
 export default function HowItWorks() {
   return (
-    <div className="bg-white">
+    <div className="bg-white font-poppins">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl divide-y divide-gray-900/10">
           <div className='flex flex-col justify-around items-center h-[300px] text-center'>
-            <h4>How MicroCrop Works</h4>
-            <h2 className="text-5xl font-bold leading-10 tracking-tight text-gray-900">Transforming Agriculture, One Solution at a Time</h2>
+            <h2 className='text-xl'>How MicroCrop Works</h2>
+            <h2 className="text-4xl font-semibold leading-10 tracking-tight text-gray-900">Transforming Agriculture, One Solution at a Time</h2>
             <p>MicroCrop uses real-time weather data, automated smart contracts, and transparent financial systems to protect farmers from climate risks.  Each payout is data-verified and automatically processed, ensuring fair, fast, and accountable insurance for African farmers.</p>
           </div>
           <dl className="mt-10 space-y-6 divide-y divide-gray-900/10">

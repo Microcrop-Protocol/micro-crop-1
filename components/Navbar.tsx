@@ -9,10 +9,9 @@ import {MicroCropLogo} from "@/constants/svg"
 
 const navigation = [
   { name: "Home", href: "/", current: true },
-  { name: "About", href: "/about", current: false },
+  { name: "About Us", href: "/about", current: false },
   { name: "Services", href: "/services", current: false },
-  { name: "Insights", href: "/insights", current: false },
-  { name: "News", href: "/news", current: false },
+  { name: "Blog", href: "/blog", current: false },
 ];
 
 function classNames(...classes: string[]) {
@@ -38,31 +37,32 @@ export default function Navbar() {
   }, [scrolled]);
 
   return (
-    <Disclosure as="nav" className={`sticky top-0 transition-all duration-300 ${scrolled ? 'bg-gray-200 backdrop-filter backdrop-blur-md bg-opacity-40' : 'bg-transparent'}`}>
+    <Disclosure as="nav" className={`sticky top-0 transition-all duration-300 font-poppins ${scrolled ? 'bg-transparent backdrop-filter backdrop-blur-md bg-opacity-40' : 'bg-transparent'}`}>
       {({ open }) => (
         <>
           <div className="mx-auto px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
               <div className="flex items-center justify-between w-full sm:items-stretch sm:justify-start md:px-20">
-                <Link href="/" className="flex flex-shrink-0 items-center">
+                <Link href="/" className="flex items-center">
                   <Image
                     src={MicroCropLogo}
-                    alt="Your Company"
+                    alt="MicroCrop Logo"
                     width={250}
                     height={250}
+                    className="w-32 h-auto sm:w-40 md:w-48 lg:w-56"
                   />
                 </Link>
-                <div className="hidden lg:ml-6 sm:flex justify-end w-full">
-                  <div className="flex justify-around items-center">
-                    {navigation.map((item) => (
+                <div className="hidden lg:ml-6 sm:flex w-full">
+                  <div className="w-full flex justify-end md:justify-center">
+                    {navigation.map((item: any) => (
                       <Link
                         key={item.name}
                         href={item.href}
                         className={classNames(
                           item.current
-                            ? "text-black"
-                            : "text-gray-800 hover:text-black",
-                          "rounded-full px-5 py-2 font-bold text-lg"
+                            ? "text-white"
+                            : "text-gray-200 hover:text-white",
+                          "rounded-full px-3 py-2 text-base"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
@@ -71,15 +71,18 @@ export default function Navbar() {
                     ))}
                   </div>
                 </div>
+                <div className='hidden md:block'>
+                  <button  className="py-2.5 px-3 w-[150px] rounded-full border border-white text-white font-semibold hover:bg-white hover:text-black hover:cursor-pointer">Contact Us</button>
+                </div>
               </div>
               <div className="flex items-center sm:hidden">
                 <DisclosureButton className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
                   {open ? (
-                    <XMarkIcon className="block h-6 w-6 text-black" aria-hidden="true" />
+                    <XMarkIcon className="block h-6 w-6 text-white" aria-hidden="true" />
                   ) : (
-                    <Bars3Icon className="block h-6 w-6 text-black" aria-hidden="true" />
+                    <Bars3Icon className="block h-6 w-6 text-white" aria-hidden="true" />
                   )}
                 </DisclosureButton>
               </div>

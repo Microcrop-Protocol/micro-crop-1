@@ -11,7 +11,7 @@ import TrustedAllies from "@/components/TrustedAllies";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="font-poppins">
       <HeroSection />
       <LogoClouds />
       <HowItWorks />

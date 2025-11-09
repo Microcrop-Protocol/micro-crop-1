@@ -5,6 +5,7 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import {MicroCropLogo} from "@/constants/svg"
 
 const navigation = [
@@ -20,6 +21,10 @@ function classNames(...classes: string[]) {
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+
+  // Determine if we're on the home page
+  const isHomePage = pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,8 +41,26 @@ export default function Navbar() {
     };
   }, [scrolled]);
 
+  // Dynamic styling based on page and scroll state
+  const getNavbarClasses = () => {
+    if (isHomePage) {
+      return scrolled
+        ? 'bg-white/10 backdrop-filter backdrop-blur-md shadow-sm'
+        : 'bg-transparent';
+    } else {
+      return scrolled
+        ? 'bg-white shadow-md'
+        : 'bg-white';
+    }
+  };
+
+  const getTextColor = () => isHomePage ? 'text-white' : 'text-gray-900';
+  const getHoverTextColor = () => isHomePage ? 'hover:text-gray-200' : 'hover:text-gray-600';
+  const getBorderColor = () => isHomePage ? 'border-white' : 'border-gray-900';
+  const getButtonHoverBg = () => isHomePage ? 'hover:bg-white hover:text-black' : 'hover:bg-gray-900 hover:text-white';
+
   return (
-    <Disclosure as="nav" className={`sticky top-0 transition-all duration-300 font-poppins ${scrolled ? 'bg-transparent backdrop-filter backdrop-blur-md bg-opacity-40' : 'bg-transparent'}`}>
+    <Disclosure as="nav" className={`sticky top-0 z-50 transition-all duration-300 font-poppins ${getNavbarClasses()}`}>
       {({ open }) => (
         <>
           <div className="mx-auto px-2 sm:px-6 lg:px-8">
@@ -54,59 +77,72 @@ export default function Navbar() {
                 </Link>
                 <div className="hidden lg:ml-6 sm:flex w-full">
                   <div className="w-full flex justify-end md:justify-center">
-                    {navigation.map((item: any) => (
-                      <Link
-                        key={item.name}
-                        href={item.href}
-                        className={classNames(
-                          item.current
-                            ? "text-white"
-                            : "text-gray-200 hover:text-white",
-                          "rounded-full px-3 py-2 text-base"
-                        )}
-                        aria-current={item.current ? "page" : undefined}
-                      >
-                        {item.name}
-                      </Link>
-                    ))}
+                    {navigation.map((item: any) => {
+                      const isActive = pathname === item.href;
+                      return (
+                        <Link
+                          key={item.name}
+                          href={item.href}
+                          className={classNames(
+                            isActive
+                              ? getTextColor()
+                              : `${getTextColor()} ${getHoverTextColor()}`,
+                            isActive && !isHomePage ? "font-semibold" : "",
+                            "rounded-full px-3 py-2 text-base transition-colors"
+                          )}
+                          aria-current={isActive ? "page" : undefined}
+                        >
+                          {item.name}
+                        </Link>
+                      );
+                    })}
                   </div>
                 </div>
                 <div className='hidden md:block'>
-                  <button  className="py-2.5 px-3 w-[150px] rounded-full border border-white text-white font-semibold hover:bg-white hover:text-black hover:cursor-pointer">Contact Us</button>
+                  <button className={`py-2.5 px-3 w-[150px] rounded-full border ${getBorderColor()} ${getTextColor()} font-semibold ${getButtonHoverBg()} hover:cursor-pointer transition-all`}>
+                    Contact Us
+                  </button>
                 </div>
               </div>
               <div className="flex items-center sm:hidden">
-                <DisclosureButton className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <DisclosureButton className={`relative inline-flex items-center justify-center rounded-md p-2 ${isHomePage ? 'text-white hover:bg-white/20' : 'text-gray-900 hover:bg-gray-100'} focus:outline-none focus:ring-2 focus:ring-inset ${isHomePage ? 'focus:ring-white' : 'focus:ring-gray-900'}`}>
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
                   {open ? (
-                    <XMarkIcon className="block h-6 w-6 text-white" aria-hidden="true" />
+                    <XMarkIcon className={`block h-6 w-6 ${getTextColor()}`} aria-hidden="true" />
                   ) : (
-                    <Bars3Icon className="block h-6 w-6 text-white" aria-hidden="true" />
+                    <Bars3Icon className={`block h-6 w-6 ${getTextColor()}`} aria-hidden="true" />
                   )}
                 </DisclosureButton>
               </div>
             </div>
           </div>
 
-          <DisclosurePanel className="sm:hidden">
+          <DisclosurePanel className={`sm:hidden ${isHomePage ? 'bg-black/80 backdrop-blur-md' : 'bg-white border-t border-gray-200'}`}>
             <div className="space-y-1 px-2 pb-3 pt-2">
-              {navigation.map((item) => (
-                <DisclosureButton
-                  key={item.name}
-                  as="a"
-                  href={item.href}
-                  className={classNames(
-                    item.current
-                      ? "bg-gray-900 text-white"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                    "block rounded-md px-3 py-2 text-base font-medium"
-                  )}
-                  aria-current={item.current ? "page" : undefined}
-                >
-                  {item.name}
-                </DisclosureButton>
-              ))}
+              {navigation.map((item) => {
+                const isActive = pathname === item.href;
+                return (
+                  <DisclosureButton
+                    key={item.name}
+                    as="a"
+                    href={item.href}
+                    className={classNames(
+                      isActive
+                        ? isHomePage
+                          ? "bg-white/20 text-white"
+                          : "bg-gray-100 text-gray-900 font-semibold"
+                        : isHomePage
+                          ? "text-gray-200 hover:bg-white/10 hover:text-white"
+                          : "text-gray-700 hover:bg-gray-50 hover:text-gray-900",
+                      "block rounded-md px-3 py-2 text-base font-medium transition-colors"
+                    )}
+                    aria-current={isActive ? "page" : undefined}
+                  >
+                    {item.name}
+                  </DisclosureButton>
+                );
+              })}
             </div>
           </DisclosurePanel>
         </>

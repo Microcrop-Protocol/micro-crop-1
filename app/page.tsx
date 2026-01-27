@@ -1,12 +1,12 @@
 import FaqsSection from "@/components/Faqs";
-import ForFarmers from "@/components/Farmers";
+import PlatformFeatures from "@/components/Farmers";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import HowItWorks from "@/components/HowItWorks";
 import LogoClouds from "@/components/LogoClouds";
-import NewsletterPage from "@/components/Newsletter";
-import Partners from "@/components/Partners";
-import PracticeAreas from "@/components/PracticeAreas";
+import PartnerCTA from "@/components/Newsletter";
+import ForOrganizations from "@/components/Partners";
+import WhyMicroCrop from "@/components/PracticeAreas";
 import TrustedAllies from "@/components/TrustedAllies";
 
 export default function Home() {
@@ -15,12 +15,12 @@ export default function Home() {
       <HeroSection />
       <LogoClouds />
       <HowItWorks />
-      <ForFarmers />
-      <TrustedAllies />
-      <Partners />
-      <PracticeAreas />
+      <PlatformFeatures />
+      {/* <TrustedAllies /> */}
+      <ForOrganizations />
+      <WhyMicroCrop />
       <FaqsSection />
-      <NewsletterPage />
+      <PartnerCTA />
       <Footer />
     </div>
   );

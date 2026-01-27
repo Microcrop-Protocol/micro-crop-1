@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
+import Link from "next/link";
 
 import { ArrowRightCircleIcon } from "@heroicons/react/16/solid";
 
@@ -11,17 +12,28 @@ const HeroSection = () => {
         <article className="text-white flex flex-col justify-around md:justify-center h-full">
           <div className="">
             <h1 className="text-4xl md:text-7xl xl:text-8xl font-semibold leading-tight">
-              Protect your harvest with <br /> affordable, automated <br />
-              Crop Insurance
+              Parametric Crop Insurance <br /> Infrastructure <br />
+              for Africa
             </h1>
           </div>
-          <h2 className="max-w-[800px] my-10">
-            MicroCrop uses blockchain and weather data to deliver affordable, automated crop insurance no paperwork, no delays, just fair payouts when farmers need them most.
+          <h2 className="max-w-[800px] my-10 text-lg md:text-xl text-gray-100">
+            Enable your organization to offer automated, blockchain-powered crop insurance to millions of smallholder farmers.
           </h2>
-          <button className="inline-flex items-center gap-2 py-3 px-6 rounded-full text-white font-semibold hover:bg-white hover:text-black transition-all duration-300 bg-white/10 backdrop-blur-lg border border-white/20 hover:border-white group w-[190px]">
-            <span>Our Solutions</span>
-            <ArrowRightCircleIcon className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
-          </button>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Link
+              href="#contact"
+              className="inline-flex items-center gap-2 py-3 px-6 rounded-full text-white font-semibold hover:bg-white hover:text-black transition-all duration-300 bg-white/10 backdrop-blur-lg border border-white/20 hover:border-white group w-fit"
+            >
+              <span>Request a Demo</span>
+              <ArrowRightCircleIcon className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+            </Link>
+            <Link
+              href="#platform"
+              className="inline-flex items-center gap-2 py-3 px-6 rounded-full text-white font-semibold hover:bg-white hover:text-black transition-all duration-300 border border-white/40 hover:border-white group w-fit"
+            >
+              <span>View Documentation</span>
+            </Link>
+          </div>
         </article>
       </div>
     </div>

@@ -5,29 +5,29 @@ import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
 
 const faqs = [
     {
-        question: "What is microcrop and how does it work?",
+        question: "What is MicroCrop and who is it for?",
         answer:
-            "Microcrop is a platform that connects smallholder farmers with agricultural experts and resources. We provide tools for crop management, market access, and financial services to help farmers maximize their yields and income.",
+            "MicroCrop is a B2B infrastructure platform that enables insurance companies, agricultural cooperatives, agri-lenders, MFIs, and NGOs to offer parametric crop insurance to smallholder farmers across Africa. We provide the technology stack — you bring the distribution.",
     },
     {
-        question: "Who can use microcrop services?",
+        question: "How does the partner onboarding process work?",
         answer:
-            "Microcrop is designed for smallholder farmers, agricultural cooperatives, and farming communities. Whether you're growing vegetables, grains, or cash crops, our platform can help you improve productivity and connect with buyers.",
+            "Our team sets up your organization on the platform, deploys a dedicated on-chain risk pool on Base, and configures your white-label environment. From there, you can add staff accounts, import farmers (individually or in bulk with KYC), and define your coverage parameters. Most partners are operational within weeks.",
     },
     {
-        question: "How do I get started with microcrop?",
+        question: "What data sources power the automated assessments?",
         answer:
-            "Getting started is simple! Sign up on our platform, complete your farmer profile, and you'll gain access to our network of agricultural experts, training resources, and marketplace connections. Our support team is available to guide you through the process.",
+            "We combine Chainlink oracles, WeatherXM ground weather stations, and satellite imagery from Planet and Sentinel to deliver accurate, automated crop damage assessments. When predefined triggers are met, smart contracts automatically process payouts — no manual claims required.",
     },
     {
-        question: "What kind of support does microcrop provide?",
+        question: "What does the pricing model look like?",
         answer:
-            "We offer comprehensive support including agronomic advice, weather forecasts, pest and disease management guidance, market price information, and connections to input suppliers. Our team of agricultural experts is always ready to help you succeed.",
+            "MicroCrop charges a simple platform fee on premiums, auto-collected on-chain. Partners set their own premium pricing for farmers. There are no hidden fees — the revenue model is fully transparent and verifiable on the blockchain. Contact us for details on pricing.",
     },
     {
-        question: "Is there a cost to use microcrop?",
+        question: "Can we integrate MicroCrop with our existing systems?",
         answer:
-            "We offer various subscription tiers to meet different needs. Basic services are available at an affordable rate, with premium features for those who want advanced analytics and personalized consultation. Contact our team to learn more about pricing options.",
+            "Yes. MicroCrop is API-first with a RESTful API for custom frontend integrations. You can build on top of our infrastructure using your own interfaces, or use our ready-made dashboards. We also support CSV exports for compliance and reporting needs.",
     },
 ]
 
@@ -74,5 +74,3 @@ const FaqsSection = () => {
 }
 
 export default FaqsSection
-
-

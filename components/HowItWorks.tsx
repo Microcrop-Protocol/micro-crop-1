@@ -4,36 +4,35 @@ import { useState } from 'react'
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
-import { MicroCropImage } from '@/constants/img'
 
 const steps = [
   {
     id: 0,
-    question: "01 Seamless Onboarding",
+    question: "01 Onboard",
     answer:
-      "Getting started with MicroCrop is simple and straightforward. Farmers can register through our mobile app or web platform by providing basic information about their farm. Our intuitive onboarding process guides you through setting up your profile, adding your crops, and connecting with our network of agricultural experts.",
-    image: MicroCropImage
+      "MicroCrop team sets up your organization, deploys your dedicated risk pool on Base, and configures your white-label environment. Get started with a fully isolated multi-tenant setup tailored to your operations.",
+    image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1200&h=600&fit=crop",
   },
   {
     id: 1,
-    question: "02 Real-Time Monitoring",
+    question: "02 Configure",
     answer:
-      "Once registered, farmers gain access to real-time weather data, soil conditions, and crop health monitoring. Our platform uses satellite imagery and IoT sensors to provide accurate, up-to-date information about your farm. You'll receive alerts about potential risks, optimal planting times, and irrigation schedules tailored to your specific crops and location.",
-    image: MicroCropImage
+      "Add staff accounts, import farmers in bulk or one-by-one with built-in KYC management, and define coverage parameters for your insurance products. Our platform supports full customization of policy terms, premium structures, and payout triggers.",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=600&fit=crop",
   },
   {
     id: 2,
-    question: "03 Smart Contracts & Insurance",
+    question: "03 Monitor",
     answer:
-      "MicroCrop's automated smart contracts ensure fair and transparent insurance coverage. When weather conditions trigger a claim, our system automatically verifies the data and processes payouts without lengthy paperwork. This blockchain-based approach eliminates intermediaries, reduces processing time, and ensures farmers receive compensation quickly when they need it most.",
-    image: MicroCropImage
+      "Real-time dashboards track policies, premiums collected, weather events, and satellite data across your portfolio. Access org-level analytics with revenue breakdowns, farmer demographics, and risk exposure metrics — all exportable via CSV for compliance and auditing.",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=600&fit=crop",
   },
   {
     id: 3,
-    question: "04 Market Access & Growth",
+    question: "04 Payout",
     answer:
-      "Connect directly with buyers and access premium markets for your crops. Our platform provides market price information, helps you negotiate better deals, and facilitates transparent transactions. You'll also gain access to training resources, expert consultation, and a community of fellow farmers sharing best practices for sustainable agriculture and business growth.",
-    image: MicroCropImage
+      "Automated damage assessments powered by Chainlink oracles, WeatherXM stations, and satellite imagery (Planet/Sentinel) trigger smart contract payouts directly to farmers via M-Pesa through Swypt. No manual claims processing required.",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=600&fit=crop",
   },
 ]
 
@@ -46,8 +45,8 @@ export default function HowItWorks() {
         <div className="mx-auto max-w-5xl">
           <div className='flex flex-col justify-around items-center mb-20 text-center'>
             <h2 className='text-xl text-[#1D5B37] font-semibold mb-4'>How MicroCrop Works</h2>
-            <h2 className="text-3xl sm:text-5xl font-bold leading-tight tracking-tight text-gray-900 mb-6">Transforming Agriculture, One Solution at a Time</h2>
-            <p className='text-lg text-gray-600 max-w-3xl'>MicroCrop uses real-time weather data, automated smart contracts, and transparent financial systems to protect farmers from climate risks. Each payout is data-verified and automatically processed, ensuring fair, fast, and accountable insurance for African farmers.</p>
+            <h2 className="text-3xl sm:text-5xl font-bold leading-tight tracking-tight text-gray-900 mb-6">Partner Onboarding in Four Steps</h2>
+            <p className='text-lg text-gray-600 max-w-3xl'>From organization setup to automated farmer payouts, MicroCrop provides the end-to-end infrastructure your team needs to launch and manage parametric crop insurance at scale.</p>
           </div>
           <dl className="space-y-6">
             {steps.map((step, index) => (
@@ -86,7 +85,13 @@ export default function HowItWorks() {
                       >
                         <div className="animate-fade-in px-4">
                           <p className="text-lg leading-8 text-gray-600 mb-8">{step.answer}</p>
-                          <Image src={step.image} alt={step.question} className='rounded-xl shadow-lg w-full' />
+                          <Image
+                            src={step.image}
+                            alt={step.question}
+                            width={1200}
+                            height={600}
+                            className='rounded-xl shadow-lg w-full'
+                          />
                         </div>
                       </DisclosurePanel>
                     </>

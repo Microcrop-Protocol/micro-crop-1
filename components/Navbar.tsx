@@ -10,8 +10,9 @@ import {MicroCropLogo} from "@/constants/svg"
 
 const navigation = [
   { name: "Home", href: "/", current: true },
+  { name: "Platform", href: "#platform", current: false },
+  { name: "For Partners", href: "#partners", current: false },
   { name: "About Us", href: "/about", current: false },
-  { name: "Services", href: "/services", current: false },
   { name: "Blog", href: "/blog", current: false },
 ];
 
@@ -99,9 +100,9 @@ export default function Navbar() {
                   </div>
                 </div>
                 <div className='hidden md:block'>
-                  <button className={`py-2.5 px-3 w-[150px] rounded-full border ${getBorderColor()} ${getTextColor()} font-semibold ${getButtonHoverBg()} hover:cursor-pointer transition-all`}>
-                    Contact Us
-                  </button>
+                  <Link href="#contact" className={`py-2.5 px-3 w-[170px] rounded-full border ${getBorderColor()} ${getTextColor()} font-semibold ${getButtonHoverBg()} hover:cursor-pointer transition-all inline-flex items-center justify-center`}>
+                    Contact Sales
+                  </Link>
                 </div>
               </div>
               <div className="flex items-center sm:hidden">

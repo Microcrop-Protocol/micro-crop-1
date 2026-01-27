@@ -1,41 +1,27 @@
 import { JSX, SVGProps } from "react"
 
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
 const navigation = {
-  solutions: [
-    { name: 'Crop Insurance', href: '#crop-insurance' },
-    { name: 'Weather Monitoring', href: '#weather-monitoring' },
-    { name: 'Smart Contracts', href: '#smart-contracts' },
-    { name: 'Market Access', href: '#market-access' },
+  platform: [
+    { name: 'Risk Pool Management', href: '#platform' },
+    { name: 'Automated Assessments', href: '#platform' },
+    { name: 'Analytics Dashboards', href: '#platform' },
+    { name: 'API Documentation', href: '#platform' },
   ],
-  support: [
-    { name: 'Help Center', href: '#help' },
-    { name: 'Claims Process', href: '#claims' },
-    { name: 'Farmer Guides', href: '#guides' },
-    { name: 'Contact Support', href: '#contact' },
+  partners: [
+    { name: 'Insurance Companies', href: '#partners' },
+    { name: 'Cooperatives', href: '#partners' },
+    { name: 'Agri-Lenders & MFIs', href: '#partners' },
+    { name: 'NGOs', href: '#partners' },
   ],
   company: [
-    { name: 'About Us', href: '#about' },
-    { name: 'Our Mission', href: '#mission' },
-    { name: 'For Farmers', href: '#farmers' },
-    { name: 'For Partners', href: '#partners' },
+    { name: 'About Us', href: '/about' },
+    { name: 'Blog', href: '/blog' },
     { name: 'Careers', href: '#careers' },
+    { name: 'Contact Sales', href: '#contact' },
   ],
-  legal: [
-    { name: 'File a Claim', href: '#file-claim' },
+  resources: [
+    { name: 'Developer Portal', href: '#platform' },
+    { name: 'API Docs', href: '#platform' },
     { name: 'Privacy Policy', href: '#privacy' },
     { name: 'Terms of Service', href: '#terms' },
   ],
@@ -115,9 +101,9 @@ export default function Footer() {
           <div className="grid grid-cols-2 gap-8 xl:col-span-2">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold leading-6 text-gray-900">Solutions</h3>
+                <h3 className="text-sm font-semibold leading-6 text-gray-900">Platform</h3>
                 <ul role="list" className="mt-6 space-y-4">
-                  {navigation.solutions.map((item) => (
+                  {navigation.platform.map((item) => (
                     <li key={item.name}>
                       <a href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
                         {item.name}
@@ -127,9 +113,9 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-semibold leading-6 text-gray-900">Support</h3>
+                <h3 className="text-sm font-semibold leading-6 text-gray-900">For Partners</h3>
                 <ul role="list" className="mt-6 space-y-4">
-                  {navigation.support.map((item) => (
+                  {navigation.partners.map((item) => (
                     <li key={item.name}>
                       <a href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
                         {item.name}
@@ -153,9 +139,9 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-semibold leading-6 text-gray-900">Legal</h3>
+                <h3 className="text-sm font-semibold leading-6 text-gray-900">Resources</h3>
                 <ul role="list" className="mt-6 space-y-4">
-                  {navigation.legal.map((item) => (
+                  {navigation.resources.map((item) => (
                     <li key={item.name}>
                       <a href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
                         {item.name}
@@ -177,7 +163,7 @@ export default function Footer() {
             ))}
           </div>
           <p className="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">
-            &copy; 2024 MicroCrop Insurance. All rights reserved.
+            &copy; 2025 MicroCrop Insurance. All rights reserved.
           </p>
         </div>
       </div>

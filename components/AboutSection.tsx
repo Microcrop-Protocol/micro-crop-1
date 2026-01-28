@@ -104,7 +104,7 @@ export default function AboutSection() {
               Our platform is built on proven infrastructure — Base for on-chain transparency,
               Chainlink and WeatherXM for reliable data oracles, and M-Pesa for last-mile farmer payouts.
             </p>
-            <div className="mx-auto mt-20 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:max-w-4xl lg:grid-cols-5">
+            <div className="mx-auto mt-20 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-4 sm:gap-x-10 sm:gap-y-14 lg:max-w-4xl lg:grid-cols-4">
               <Image
                 className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
                 src="/img/flow.png"
@@ -130,13 +130,6 @@ export default function AboutSection() {
                 className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
                 src="/img/mpesa.png"
                 alt="M-Pesa"
-                width={158}
-                height={48}
-              />
-              <Image
-                className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-                src="/img/plgenesis.jpg"
-                alt="PLGenesis"
                 width={158}
                 height={48}
               />

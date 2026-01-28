@@ -90,6 +90,7 @@ export default function HowItWorks() {
                             alt={step.question}
                             width={1200}
                             height={600}
+                            sizes="(max-width: 1024px) 100vw, 768px"
                             className='rounded-xl shadow-lg w-full'
                           />
                         </div>

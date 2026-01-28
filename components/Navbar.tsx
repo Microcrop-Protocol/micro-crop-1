@@ -73,6 +73,7 @@ export default function Navbar() {
                     alt="MicroCrop Logo"
                     width={250}
                     height={250}
+                    priority
                     className="w-32 h-auto sm:w-40 md:w-48 lg:w-56"
                   />
                 </Link>

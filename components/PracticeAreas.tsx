@@ -67,6 +67,7 @@ const WhyMicroCrop = () => {
                 alt={item.title}
                 width={800}
                 height={1000}
+                sizes="(max-width: 1024px) 100vw, 33vw"
                 className="absolute inset-0 -z-10 h-full w-full object-cover"
               />
               <div className="absolute inset-0 -z-10 bg-linear-to-t from-gray-900 via-gray-900/40" />

@@ -1,7 +1,18 @@
+import Image from "next/image";
+
 export default function PartnerCTA() {
   return (
-    <div id="contact" className="newsletter-background bg-cover">
-      <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <div id="contact" className="relative bg-gray-900 overflow-hidden">
+      <Image
+        src="/img/newsletter-bg.jpg"
+        alt=""
+        fill
+        sizes="100vw"
+        className="object-cover"
+      />
+      {/* Diagonal gradient overlay matching original SVG */}
+      <div className="absolute inset-0 bg-gradient-to-br from-transparent to-black" />
+      <div className="relative mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="relative isolate overflow-hidden px-6 py-24 sm:rounded-3xl sm:px-24 xl:py-32">
           <h2 className="mx-auto max-w-2xl text-center text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Ready to Launch Parametric Crop Insurance?

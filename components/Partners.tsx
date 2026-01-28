@@ -52,6 +52,7 @@ const ForOrganizations = async () => {
                   alt={useCase.title}
                   width={800}
                   height={500}
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="aspect-video w-full bg-gray-100 object-cover sm:aspect-2/1 lg:aspect-3/2 transition-transform duration-300 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />

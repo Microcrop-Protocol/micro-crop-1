@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const ForOrganizations = async () => {
+const ForOrganizations = () => {
   const useCases = [
     {
       id: 1,
@@ -29,7 +29,7 @@ const ForOrganizations = async () => {
   ];
 
   return (
-    <div id="partners" className="bg-gray-50 py-24 sm:py-32 font-DM">
+    <div id="partners" className="bg-gray-50 py-24 sm:py-32 font-poppins">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center mb-16">
           <h5 className="text-lg font-semibold text-[#1D5B37] mb-2">For Organizations</h5>

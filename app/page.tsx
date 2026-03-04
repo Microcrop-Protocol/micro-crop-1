@@ -7,7 +7,6 @@ import LogoClouds from "@/components/LogoClouds";
 import PartnerCTA from "@/components/Newsletter";
 import ForOrganizations from "@/components/Partners";
 import WhyMicroCrop from "@/components/PracticeAreas";
-import TrustedAllies from "@/components/TrustedAllies";
 
 export default function Home() {
   return (
@@ -16,7 +15,6 @@ export default function Home() {
       <LogoClouds />
       <HowItWorks />
       <PlatformFeatures />
-      {/* <TrustedAllies /> */}
       <ForOrganizations />
       <WhyMicroCrop />
       <FaqsSection />

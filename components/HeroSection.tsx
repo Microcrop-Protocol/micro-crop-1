@@ -7,7 +7,7 @@ import { ArrowRightCircleIcon } from "@heroicons/react/16/solid";
 
 const HeroSection = () => {
   return (
-    <div className="relative h-full sm:h-screen">
+    <div className="relative min-h-screen">
       <Image
         src="/img/hero-bg.jpg"
         alt=""
@@ -36,11 +36,14 @@ const HeroSection = () => {
         <path d="M305 112L308.394 132.606L329 136L308.394 139.394L305 160L301.606 139.394L281 136L301.606 132.606L305 112Z" fill="white" />
       </svg>
       <Navbar />
-      <div className="flex flex-col md:flex-row items-center justify-start p-5  md:px-20 h-full">
+      <div className="flex flex-col md:flex-row items-center justify-start px-5 py-10 sm:p-8 md:px-20 h-full">
         <article className="text-white flex flex-col justify-around md:justify-center h-full">
           <div className="">
-            <h1 className="text-4xl md:text-7xl xl:text-8xl font-semibold leading-tight">
-              Parametric Crop Insurance <br /> Infrastructure <br />
+            <h1 className="text-3xl sm:text-4xl md:text-7xl xl:text-8xl font-semibold leading-tight">
+              Parametric Crop Insurance{' '}
+              <br className="hidden md:block" />
+              Infrastructure{' '}
+              <br className="hidden md:block" />
               for Africa
             </h1>
           </div>
@@ -59,7 +62,7 @@ const HeroSection = () => {
               href="#platform"
               className="inline-flex items-center gap-2 py-3 px-6 rounded-full text-white font-semibold hover:bg-white hover:text-black transition-all duration-300 border border-white/40 hover:border-white group w-fit"
             >
-              <span>View Documentation</span>
+              <span>Explore Platform</span>
             </Link>
           </div>
         </article>

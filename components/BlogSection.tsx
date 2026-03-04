@@ -4,18 +4,16 @@ const posts = [
   {
     id: 1,
     title: 'Why Parametric Insurance Is the Future for African Farmers',
-    href: '#',
     description:
       'Traditional crop insurance relies on slow, manual claims processes that fail smallholder farmers. Parametric insurance, powered by weather data and smart contracts, offers a faster, more transparent alternative — and MicroCrop is building the infrastructure to make it scalable.',
     imageUrl:
       'https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=800&h=500&fit=crop',
     date: 'Feb 12, 2025',
     datetime: '2025-02-12',
-    category: { title: 'Insurance', href: '#' },
+    category: 'Insurance',
     author: {
       name: 'Mary',
       role: 'Co-Founder & CEO',
-      href: '#',
       imageUrl: '/img/mary.jpg',
     },
   },
@@ -37,7 +35,7 @@ export default function BlogSection() {
               <div className="relative w-full">
                 <Image
                   src={post.imageUrl}
-                  alt=""
+                  alt={post.title}
                   width={800}
                   height={500}
                   sizes="(max-width: 1024px) 100vw, 33vw"
@@ -50,31 +48,20 @@ export default function BlogSection() {
                   <time dateTime={post.datetime} className="text-gray-500">
                     {post.date}
                   </time>
-                  <a
-                    href={post.category.href}
-                    className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
-                  >
-                    {post.category.title}
-                  </a>
+                  <span className="rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600">
+                    {post.category}
+                  </span>
                 </div>
-                <div className="group relative">
-                  <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                    <a href={post.href}>
-                      <span className="absolute inset-0" />
-                      {post.title}
-                    </a>
+                <div className="mt-3">
+                  <h3 className="text-lg font-semibold leading-6 text-gray-900">
+                    {post.title}
                   </h3>
                   <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">{post.description}</p>
                 </div>
-                <div className="relative mt-8 flex items-center gap-x-4">
-                  <Image src={post.author.imageUrl} alt="" width={40} height={40} className="h-10 w-10 rounded-full bg-gray-100" />
+                <div className="mt-8 flex items-center gap-x-4">
+                  <Image src={post.author.imageUrl} alt={post.author.name} width={40} height={40} className="h-10 w-10 rounded-full bg-gray-100" />
                   <div className="text-sm leading-6">
-                    <p className="font-semibold text-gray-900">
-                      <a href={post.author.href}>
-                        <span className="absolute inset-0" />
-                        {post.author.name}
-                      </a>
-                    </p>
+                    <p className="font-semibold text-gray-900">{post.author.name}</p>
                     <p className="text-gray-600">{post.author.role}</p>
                   </div>
                 </div>

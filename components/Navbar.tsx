@@ -10,8 +10,6 @@ import {MicroCropLogo} from "@/constants/svg"
 
 const navigation = [
   { name: "Home", href: "/", current: true },
-  { name: "Platform", href: "#platform", current: false },
-  { name: "For Partners", href: "#partners", current: false },
   { name: "About Us", href: "/about", current: false },
   { name: "Blog", href: "/blog", current: false },
 ];
@@ -64,47 +62,41 @@ export default function Navbar() {
     <Disclosure as="nav" className={`sticky top-0 z-50 transition-all duration-300 font-poppins ${getNavbarClasses()}`}>
       {({ open }) => (
         <>
-          <div className="mx-auto px-2 sm:px-6 lg:px-8">
-            <div className="relative flex h-16 items-center justify-between">
-              <div className="flex items-center justify-between w-full sm:items-stretch sm:justify-start md:px-20">
-                <Link href="/" className="flex items-center">
-                  <Image
-                    src={MicroCropLogo}
-                    alt="MicroCrop Logo"
-                    width={250}
-                    height={250}
-                    priority
-                    className="w-32 h-auto sm:w-40 md:w-48 lg:w-56"
-                  />
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="flex h-16 items-center justify-between">
+              <Link href="/" className="flex-shrink-0">
+                <Image
+                  src={MicroCropLogo}
+                  alt="MicroCrop Logo"
+                  width={250}
+                  height={250}
+                  priority
+                  className="w-32 h-auto sm:w-40 lg:w-48"
+                />
+              </Link>
+              <div className="hidden lg:flex lg:items-center lg:gap-x-8">
+                {navigation.map((item: any) => {
+                  const isActive = pathname === item.href;
+                  return (
+                    <Link
+                      key={item.name}
+                      href={item.href}
+                      className={classNames(
+                        isActive
+                          ? getTextColor()
+                          : `${getTextColor()} ${getHoverTextColor()}`,
+                        isActive && !isHomePage ? "font-semibold" : "",
+                        "rounded-full px-3 py-2 text-base transition-colors"
+                      )}
+                      aria-current={isActive ? "page" : undefined}
+                    >
+                      {item.name}
+                    </Link>
+                  );
+                })}
+                <Link href="#contact" className={`py-2.5 px-5 rounded-full border ${getBorderColor()} ${getTextColor()} font-semibold ${getButtonHoverBg()} hover:cursor-pointer transition-all whitespace-nowrap`}>
+                  Request a Demo
                 </Link>
-                <div className="hidden lg:ml-6 lg:flex w-full">
-                  <div className="w-full flex justify-center">
-                    {navigation.map((item: any) => {
-                      const isActive = pathname === item.href;
-                      return (
-                        <Link
-                          key={item.name}
-                          href={item.href}
-                          className={classNames(
-                            isActive
-                              ? getTextColor()
-                              : `${getTextColor()} ${getHoverTextColor()}`,
-                            isActive && !isHomePage ? "font-semibold" : "",
-                            "rounded-full px-3 py-2 text-base transition-colors"
-                          )}
-                          aria-current={isActive ? "page" : undefined}
-                        >
-                          {item.name}
-                        </Link>
-                      );
-                    })}
-                  </div>
-                </div>
-                <div className='hidden lg:block'>
-                  <Link href="#contact" className={`py-2.5 px-3 w-[170px] rounded-full border ${getBorderColor()} ${getTextColor()} font-semibold ${getButtonHoverBg()} hover:cursor-pointer transition-all inline-flex items-center justify-center`}>
-                    Request a Demo
-                  </Link>
-                </div>
               </div>
               <div className="flex items-center lg:hidden">
                 <DisclosureButton className={`relative inline-flex items-center justify-center rounded-md p-2 ${isHomePage ? 'text-white hover:bg-white/20' : 'text-gray-900 hover:bg-gray-100'} focus:outline-none focus:ring-2 focus:ring-inset ${isHomePage ? 'focus:ring-white' : 'focus:ring-gray-900'}`}>

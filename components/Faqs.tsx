@@ -1,6 +1,6 @@
 "use client"
 
-import { Disclosure } from '@headlessui/react'
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
 
 const faqs = [
@@ -43,7 +43,7 @@ const FaqsSection = () => {
                                 {({ open }) => (
                                     <>
                                         <dt>
-                                            <Disclosure.Button className="flex w-full items-start justify-between text-left text-white hover:opacity-80 transition-opacity py-4">
+                                            <DisclosureButton className="flex w-full items-start justify-between text-left text-white hover:opacity-80 transition-opacity py-4">
                                                 <span className="text-lg font-semibold leading-7">{faq.question}</span>
                                                 <span className="ml-6 flex h-7 items-center">
                                                     <span className={`transform transition-transform duration-300 ${open ? 'rotate-180' : 'rotate-0'}`}>
@@ -54,14 +54,14 @@ const FaqsSection = () => {
                                                         )}
                                                     </span>
                                                 </span>
-                                            </Disclosure.Button>
+                                            </DisclosureButton>
                                         </dt>
-                                        <Disclosure.Panel
+                                        <DisclosurePanel
                                             as="dd"
                                             className="pr-12 pb-4 overflow-hidden transition-all duration-300 ease-in-out"
                                         >
                                             <p className="text-base leading-7 text-gray-100 animate-fade-in">{faq.answer}</p>
-                                        </Disclosure.Panel>
+                                        </DisclosurePanel>
                                     </>
                                 )}
                             </Disclosure>

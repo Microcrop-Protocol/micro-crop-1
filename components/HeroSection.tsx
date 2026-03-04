@@ -7,7 +7,7 @@ import { ArrowRightCircleIcon } from "@heroicons/react/16/solid";
 
 const HeroSection = () => {
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen flex flex-col">
       <Image
         src="/img/hero-bg.jpg"
         alt=""
@@ -36,18 +36,16 @@ const HeroSection = () => {
         <path d="M305 112L308.394 132.606L329 136L308.394 139.394L305 160L301.606 139.394L281 136L301.606 132.606L305 112Z" fill="white" />
       </svg>
       <Navbar />
-      <div className="flex flex-col md:flex-row items-center justify-start px-5 py-10 sm:p-8 md:px-20 h-full">
-        <article className="text-white flex flex-col justify-around md:justify-center h-full">
-          <div className="">
-            <h1 className="text-3xl sm:text-4xl md:text-7xl xl:text-8xl font-semibold leading-tight">
-              Parametric Crop Insurance{' '}
-              <br className="hidden md:block" />
-              Infrastructure{' '}
-              <br className="hidden md:block" />
-              for Africa
-            </h1>
-          </div>
-          <h2 className="max-w-[800px] my-10 text-lg md:text-xl text-gray-100">
+      <div className="flex flex-1 items-center px-5 sm:px-8 md:px-20 py-20 sm:py-28 md:py-32">
+        <article className="text-white flex flex-col">
+          <h1 className="text-3xl sm:text-4xl md:text-7xl xl:text-8xl font-semibold leading-tight">
+            Parametric Crop Insurance{' '}
+            <br className="hidden md:block" />
+            Infrastructure{' '}
+            <br className="hidden md:block" />
+            for Africa
+          </h1>
+          <h2 className="max-w-[800px] mt-6 mb-10 sm:mt-8 sm:mb-12 text-lg md:text-xl text-gray-100">
             Enable your organization to offer automated, blockchain-powered crop insurance to millions of smallholder farmers.
           </h2>
           <div className="flex flex-col sm:flex-row gap-4">

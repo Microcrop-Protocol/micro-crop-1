@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 
@@ -40,7 +39,7 @@ export default function HowItWorks() {
   const [openIndex, setOpenIndex] = useState(0)
 
   return (
-    <div className="bg-white ">
+    <div className="bg-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 py-24">
         <div className="mx-auto max-w-5xl">
           <div className='flex flex-col justify-around items-center mb-20 text-center'>
@@ -49,57 +48,43 @@ export default function HowItWorks() {
             <p className='text-lg text-gray-600 max-w-3xl'>From organization setup to automated farmer payouts, MicroCrop provides the end-to-end infrastructure your team needs to launch and manage parametric crop insurance at scale.</p>
           </div>
           <dl className="space-y-6">
-            {steps.map((step, index) => (
-              <Disclosure
-                as="div"
-                key={step.id}
-                className="border-b border-gray-200 pb-6"
-                defaultOpen={index === 0}
-              >
-                {({ open }) => {
-                  if (open && openIndex !== index) {
-                    setOpenIndex(index)
-                  }
-                  return (
-                    <>
-                      <dt>
-                        <DisclosureButton
-                          className="flex w-full items-start justify-between text-left text-gray-900 hover:opacity-80 transition-opacity py-4"
-                          onClick={() => setOpenIndex(index)}
-                        >
-                          <span className="font-semibold text-2xl sm:text-3xl text-black">{step.question}</span>
-                          <span className="ml-6 flex items-center">
-                            <span className={`transform transition-transform duration-300 ${open ? 'rotate-180' : 'rotate-0'}`}>
-                              {open ? (
-                                <MinusSmallIcon className="h-8 w-8" aria-hidden="true" />
-                              ) : (
-                                <PlusSmallIcon className="h-8 w-8" aria-hidden="true" />
-                              )}
-                            </span>
-                          </span>
-                        </DisclosureButton>
-                      </dt>
-                      <DisclosurePanel
-                        as="dd"
-                        className="w-full overflow-hidden transition-all duration-500 ease-in-out"
-                      >
-                        <div className="animate-fade-in px-4">
-                          <p className="text-lg leading-8 text-gray-600 mb-8">{step.answer}</p>
-                          <Image
-                            src={step.image}
-                            alt={step.question}
-                            width={1200}
-                            height={600}
-                            sizes="(max-width: 1024px) 100vw, 768px"
-                            className='rounded-xl shadow-lg w-full'
-                          />
-                        </div>
-                      </DisclosurePanel>
-                    </>
-                  )
-                }}
-              </Disclosure>
-            ))}
+            {steps.map((step) => {
+              const isOpen = openIndex === step.id
+              return (
+                <div key={step.id} className="border-b border-gray-200 pb-6">
+                  <dt>
+                    <button
+                      className="flex w-full items-start justify-between text-left text-gray-900 hover:opacity-80 transition-opacity py-4"
+                      onClick={() => setOpenIndex(isOpen ? -1 : step.id)}
+                    >
+                      <span className="font-semibold text-2xl sm:text-3xl text-black">{step.question}</span>
+                      <span className="ml-6 flex items-center">
+                        {isOpen ? (
+                          <MinusSmallIcon className="h-8 w-8" aria-hidden="true" />
+                        ) : (
+                          <PlusSmallIcon className="h-8 w-8" aria-hidden="true" />
+                        )}
+                      </span>
+                    </button>
+                  </dt>
+                  {isOpen && (
+                    <dd className="w-full overflow-hidden">
+                      <div className="animate-fade-in px-4">
+                        <p className="text-lg leading-8 text-gray-600 mb-8">{step.answer}</p>
+                        <Image
+                          src={step.image}
+                          alt={step.question}
+                          width={1200}
+                          height={600}
+                          sizes="(max-width: 1024px) 100vw, 768px"
+                          className='rounded-xl shadow-lg w-full'
+                        />
+                      </div>
+                    </dd>
+                  )}
+                </div>
+              )
+            })}
           </dl>
         </div>
       </div>

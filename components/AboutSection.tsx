@@ -104,30 +104,30 @@ export default function AboutSection() {
               Our platform is built on proven infrastructure — Base for on-chain transparency,
               Chainlink and WeatherXM for reliable data oracles, and M-Pesa for last-mile farmer payouts.
             </p>
-            <div className="mx-auto mt-20 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-4 sm:gap-x-10 sm:gap-y-14 lg:max-w-4xl lg:grid-cols-4">
+            <div className="mx-auto mt-20 grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-4 sm:gap-x-10 sm:gap-y-14 lg:max-w-4xl lg:grid-cols-4">
               <Image
-                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                src="/img/flow.png"
-                alt="Flow"
+                className="max-h-12 w-full object-contain"
+                src="/img/chainlink.png"
+                alt="Chainlink"
                 width={158}
                 height={48}
               />
               <Image
-                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                className="max-h-12 w-full object-contain"
                 src="/img/Base.png"
                 alt="Base"
                 width={158}
                 height={48}
               />
               <Image
-                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                className="max-h-12 w-full object-contain"
                 src="/img/xm-.png"
                 alt="WeatherXM"
                 width={158}
                 height={48}
               />
               <Image
-                className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
+                className="max-h-12 w-full object-contain"
                 src="/img/mpesa.png"
                 alt="M-Pesa"
                 width={158}
@@ -146,61 +146,59 @@ export default function AboutSection() {
           </div>
         </div>
 
-        {/* Team section */}
-        <div className="mt-32 overflow-hidden sm:mt-40">
-          <div className="mx-auto max-w-7xl px-6 lg:flex lg:px-8">
-            <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-y-8">
-              <div className="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8">
-                <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our team</h2>
-                <p className="mt-6 text-xl leading-8 text-gray-600">
-                  We&apos;re a team of builders passionate about using blockchain, data science, and
-                  agricultural technology to solve real problems for African farming communities.
-                </p>
-                <p className="mt-6 text-base leading-7 text-gray-600">
-                  Our team combines expertise in smart contract development, satellite data analysis,
-                  insurance product design, and mobile money integrations to build the platform
-                  infrastructure that organizations need to serve farmers at scale.
-                </p>
-              </div>
-              <div className="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
-                <div className="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
+        {/* Founders section */}
+        <div className="mt-32 sm:mt-40">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto max-w-2xl lg:mx-0">
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Founders</h2>
+              <p className="mt-6 text-lg leading-8 text-gray-600">
+                We&apos;re a team of builders passionate about using blockchain, data science, and
+                agricultural technology to solve real problems for African farming communities.
+              </p>
+            </div>
+            <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+              {/* Mary */}
+              <div className="flex flex-col">
+                <div className="relative h-64 sm:h-72 lg:h-80 w-full overflow-hidden rounded-2xl bg-gray-100">
                   <Image
-                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1152&h=823&fit=crop"
-                    alt="Team working together"
-                    width={1152}
-                    height={823}
-                    className="aspect-[7/5] w-[37rem] max-w-none rounded-2xl bg-gray-50 object-cover"
+                    src="/img/mary.jpg"
+                    alt="Mary — Co-Founder & CEO"
+                    fill
+                    className="object-cover"
                   />
                 </div>
-                <div className="contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-[37rem] lg:items-start lg:justify-end lg:gap-x-8">
-                  <div className="order-first flex w-64 flex-none justify-end self-end lg:w-auto">
-                    <Image
-                      src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=768&h=604&fit=crop"
-                      alt="Office collaboration"
-                      width={768}
-                      height={604}
-                      className="aspect-[4/3] w-[24rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover"
-                    />
-                  </div>
-                  <div className="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none">
-                    <Image
-                      src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1152&h=842&fit=crop"
-                      alt="Platform development"
-                      width={1152}
-                      height={842}
-                      className="aspect-[7/5] w-[37rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover"
-                    />
-                  </div>
-                  <div className="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none">
-                    <Image
-                      src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?w=768&h=604&fit=crop"
-                      alt="Data analysis"
-                      width={768}
-                      height={604}
-                      className="aspect-[4/3] w-[24rem] max-w-none rounded-2xl bg-gray-50 object-cover"
-                    />
-                  </div>
+                <h3 className="mt-6 text-xl font-bold tracking-tight text-gray-900">Mary</h3>
+                <p className="text-base font-semibold text-[#1D5B37]">Co-Founder &amp; CEO</p>
+                <p className="mt-4 text-base leading-7 text-gray-600">
+                  Mary leads strategy, partnerships, and product direction at MicroCrop. She holds a
+                  Bachelor&apos;s degree in International Relations, is a Google-certified Data Analyst,
+                  and a blockchain developer through Web3Bridge. Mary has built award-winning products
+                  including Strimz (Lisk Hackathon &amp; Celo Incubator winner) and Antikorrupt (UNODC
+                  Code for Integrity AI Track winner, 2024). She brings strong experience in stakeholder
+                  coordination, data-driven product design, and building technology solutions tailored
+                  for African markets.
+                </p>
+              </div>
+              {/* Moses */}
+              <div className="flex flex-col">
+                <div className="relative h-64 sm:h-72 lg:h-80 w-full overflow-hidden rounded-2xl bg-gray-100">
+                  <Image
+                    src="/img/moses.jpg"
+                    alt="Moses Timbwa — Co-Founder & CTO"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
+                <h3 className="mt-6 text-xl font-bold tracking-tight text-gray-900">Moses Timbwa</h3>
+                <p className="text-base font-semibold text-[#1D5B37]">Co-Founder &amp; CTO</p>
+                <p className="mt-4 text-base leading-7 text-gray-600">
+                  Moses leads engineering, infrastructure, and smart contract architecture at MicroCrop.
+                  He is a full-stack and blockchain developer with experience building scalable systems
+                  optimized for low-connectivity environments. Moses has contributed to open-source
+                  ecosystems such as StarkNet and Bitcoin and has built multiple blockchain applications
+                  across fintech and Web3. He focuses on designing secure, automated systems that abstract
+                  technical complexity while delivering reliable performance.
+                </p>
               </div>
             </div>
           </div>

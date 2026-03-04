@@ -105,7 +105,7 @@ export default function AboutSection() {
               <div className="flex flex-col">
                 <div className="relative h-64 sm:h-72 lg:h-80 w-full overflow-hidden rounded-2xl bg-gray-100">
                   <Image
-                    src="/img/mary.jpg"
+                    src="/img/mary.jpeg"
                     alt="Mary Gathoni — Co-Founder & CEO"
                     fill
                     className="object-cover"

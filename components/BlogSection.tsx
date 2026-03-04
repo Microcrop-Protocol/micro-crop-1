@@ -14,7 +14,7 @@ const posts = [
     author: {
       name: 'Mary Gathoni',
       role: 'Co-Founder & CEO',
-      imageUrl: '/img/mary.jpg',
+      imageUrl: '/img/mary.jpeg',
     },
   },
 ]

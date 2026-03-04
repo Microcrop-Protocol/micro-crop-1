@@ -5,7 +5,7 @@ export default function PartnerCTA() {
     <div id="contact" className="relative bg-gray-900 overflow-hidden">
       <Image
         src="/img/newsletter-bg.jpg"
-        alt=""
+        alt="Agricultural field background"
         fill
         sizes="100vw"
         className="object-cover"

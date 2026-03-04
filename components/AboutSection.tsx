@@ -106,12 +106,12 @@ export default function AboutSection() {
                 <div className="relative h-64 sm:h-72 lg:h-80 w-full overflow-hidden rounded-2xl bg-gray-100">
                   <Image
                     src="/img/mary.jpg"
-                    alt="Mary — Co-Founder & CEO"
+                    alt="Mary Gathoni — Co-Founder & CEO"
                     fill
                     className="object-cover"
                   />
                 </div>
-                <h3 className="mt-6 text-xl font-bold tracking-tight text-gray-900">Mary</h3>
+                <h3 className="mt-6 text-xl font-bold tracking-tight text-gray-900">Mary Gathoni</h3>
                 <p className="text-base font-semibold text-[#1D5B37]">Co-Founder &amp; CEO</p>
                 <p className="mt-4 text-base leading-7 text-gray-600">
                   Mary leads strategy, partnerships, and product direction at MicroCrop. She holds a

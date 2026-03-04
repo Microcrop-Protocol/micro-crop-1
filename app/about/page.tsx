@@ -1,16 +1,19 @@
 import AboutSection from '@/components/AboutSection'
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
-import React from 'react'
+import type { Metadata } from 'next'
 
-const AboutPage = () => {
+export const metadata: Metadata = {
+  title: 'About Us — MicroCrop',
+  description: 'Meet the team behind MicroCrop — building parametric crop insurance infrastructure for Africa.',
+}
+
+export default function AboutPage() {
   return (
     <div className="font-poppins">
-        <Navbar />
-        <AboutSection />
-        <Footer />
+      <Navbar />
+      <AboutSection />
+      <Footer />
     </div>
   )
 }
-
-export default AboutPage

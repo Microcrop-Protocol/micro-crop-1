@@ -77,8 +77,8 @@ export default function Navbar() {
                     className="w-32 h-auto sm:w-40 md:w-48 lg:w-56"
                   />
                 </Link>
-                <div className="hidden lg:ml-6 sm:flex w-full">
-                  <div className="w-full flex justify-end md:justify-center">
+                <div className="hidden lg:ml-6 lg:flex w-full">
+                  <div className="w-full flex justify-center">
                     {navigation.map((item: any) => {
                       const isActive = pathname === item.href;
                       return (
@@ -100,13 +100,13 @@ export default function Navbar() {
                     })}
                   </div>
                 </div>
-                <div className='hidden md:block'>
+                <div className='hidden lg:block'>
                   <Link href="#contact" className={`py-2.5 px-3 w-[170px] rounded-full border ${getBorderColor()} ${getTextColor()} font-semibold ${getButtonHoverBg()} hover:cursor-pointer transition-all inline-flex items-center justify-center`}>
-                    Contact Sales
+                    Request a Demo
                   </Link>
                 </div>
               </div>
-              <div className="flex items-center sm:hidden">
+              <div className="flex items-center lg:hidden">
                 <DisclosureButton className={`relative inline-flex items-center justify-center rounded-md p-2 ${isHomePage ? 'text-white hover:bg-white/20' : 'text-gray-900 hover:bg-gray-100'} focus:outline-none focus:ring-2 focus:ring-inset ${isHomePage ? 'focus:ring-white' : 'focus:ring-gray-900'}`}>
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
@@ -120,7 +120,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          <DisclosurePanel className={`sm:hidden ${isHomePage ? 'bg-black/80 backdrop-blur-md' : 'bg-white border-t border-gray-200'}`}>
+          <DisclosurePanel className={`lg:hidden ${isHomePage ? 'bg-black/80 backdrop-blur-md' : 'bg-white border-t border-gray-200'}`}>
             <div className="space-y-1 px-2 pb-3 pt-2">
               {navigation.map((item) => {
                 const isActive = pathname === item.href;

@@ -103,12 +103,13 @@ export default function AboutSection() {
             <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2">
               {/* Mary */}
               <div className="flex flex-col">
-                <div className="relative h-64 sm:h-72 lg:h-80 w-full overflow-hidden rounded-2xl bg-gray-100">
+                <div className="overflow-hidden rounded-2xl bg-gray-100">
                   <Image
                     src="/img/mary.jpeg"
                     alt="Mary Gathoni — Co-Founder & CEO"
-                    fill
-                    className="object-cover"
+                    width={853}
+                    height={1280}
+                    className="w-full h-auto"
                   />
                 </div>
                 <h3 className="mt-6 text-xl font-bold tracking-tight text-gray-900">Mary Gathoni</h3>
@@ -125,12 +126,13 @@ export default function AboutSection() {
               </div>
               {/* Moses */}
               <div className="flex flex-col">
-                <div className="relative h-64 sm:h-72 lg:h-80 w-full overflow-hidden rounded-2xl bg-gray-100">
+                <div className="overflow-hidden rounded-2xl bg-gray-100">
                   <Image
                     src="/img/moses.jpg"
                     alt="Moses Timbwa — Co-Founder & CTO"
-                    fill
-                    className="object-cover object-[center_20%]"
+                    width={853}
+                    height={1280}
+                    className="w-full h-auto"
                   />
                 </div>
                 <h3 className="mt-6 text-xl font-bold tracking-tight text-gray-900">Moses Timbwa</h3>

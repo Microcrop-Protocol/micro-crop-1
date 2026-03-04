@@ -18,7 +18,7 @@ const navigation = {
     },
     {
       name: 'LinkedIn',
-      href: 'https://linkedin.com/company/microcrop',
+      href: 'https://www.linkedin.com/company/micro-crop/',
       icon: (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path

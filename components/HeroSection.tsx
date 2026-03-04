@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "./Navbar";
 import Link from "next/link";
 import Image from "next/image";
@@ -10,7 +9,7 @@ const HeroSection = () => {
     <div className="relative min-h-screen flex flex-col">
       <Image
         src="/img/hero-bg.jpg"
-        alt=""
+        alt="African farmland landscape"
         fill
         priority
         sizes="100vw"

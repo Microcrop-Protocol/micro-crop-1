@@ -1,6 +1,5 @@
 "use client"
 
-import React from 'react';
 import Image from "next/image";
 
 const differentiators = [
@@ -45,7 +44,7 @@ const differentiators = [
 
 const WhyMicroCrop = () => {
   return (
-    <div className="bg-white py-24 sm:py-32 font-DM">
+    <div className="bg-white py-24 sm:py-32 font-poppins">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center mb-4">
           <h5 className="text-lg font-semibold text-[#1D5B37] mb-2">Why MicroCrop</h5>

@@ -75,7 +75,7 @@ export default function Navbar() {
                 />
               </Link>
               <div className="hidden lg:flex lg:items-center lg:gap-x-8">
-                {navigation.map((item: any) => {
+                {navigation.map((item) => {
                   const isActive = pathname === item.href;
                   return (
                     <Link

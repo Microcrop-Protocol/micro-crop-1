@@ -130,7 +130,7 @@ export default function AboutSection() {
                     src="/img/moses.jpg"
                     alt="Moses Timbwa — Co-Founder & CTO"
                     fill
-                    className="object-cover object-top"
+                    className="object-cover object-[center_20%]"
                   />
                 </div>
                 <h3 className="mt-6 text-xl font-bold tracking-tight text-gray-900">Moses Timbwa</h3>

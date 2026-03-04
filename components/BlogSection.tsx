@@ -12,7 +12,7 @@ const posts = [
     datetime: '2025-02-12',
     category: 'Insurance',
     author: {
-      name: 'Mary',
+      name: 'Mary Gathoni',
       role: 'Co-Founder & CEO',
       imageUrl: '/img/mary.jpg',
     },

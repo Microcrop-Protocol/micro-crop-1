@@ -53,8 +53,8 @@ export default function PartnerCTA() {
                 gradientUnits="userSpaceOnUse"
                 gradientTransform="translate(512 512) rotate(90) scale(512)"
               >
-                <stop stopColor="#7775D6" />
-                <stop offset={1} stopColor="#E935C1" stopOpacity={0} />
+                <stop stopColor="#1D5B37" />
+                <stop offset={1} stopColor="#1D5B37" stopOpacity={0} />
               </radialGradient>
             </defs>
           </svg>

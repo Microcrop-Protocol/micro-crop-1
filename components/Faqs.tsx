@@ -36,7 +36,7 @@ const FaqsSection = () => {
         <div className="bg-[#1D5B37]">
             <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
                 <div className="mx-auto max-w-4xl">
-                    <h2 className="text-5xl font-bold leading-10 tracking-tight text-white mb-12">Frequently asked questions</h2>
+                    <h2 className="text-3xl sm:text-5xl font-bold leading-tight tracking-tight text-white mb-12">Frequently asked questions</h2>
                     <dl className="space-y-4">
                         {faqs.map((faq) => (
                             <Disclosure as="div" key={faq.question} className="border-b border-white/10 pb-4">

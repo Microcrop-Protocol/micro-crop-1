@@ -3,24 +3,22 @@ import Image from 'next/image'
 const posts = [
   {
     id: 1,
-    title: 'Boost your conversion rate',
+    title: 'Why Parametric Insurance Is the Future for African Farmers',
     href: '#',
     description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+      'Traditional crop insurance relies on slow, manual claims processes that fail smallholder farmers. Parametric insurance, powered by weather data and smart contracts, offers a faster, more transparent alternative — and MicroCrop is building the infrastructure to make it scalable.',
     imageUrl:
-      'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
-    date: 'Mar 16, 2020',
-    datetime: '2020-03-16',
-    category: { title: 'Marketing', href: '#' },
+      'https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=800&h=500&fit=crop',
+    date: 'Feb 12, 2025',
+    datetime: '2025-02-12',
+    category: { title: 'Insurance', href: '#' },
     author: {
-      name: 'Michael Foster',
-      role: 'Co-Founder / CTO',
+      name: 'Mary',
+      role: 'Co-Founder & CEO',
       href: '#',
-      imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      imageUrl: '/img/mary.jpg',
     },
   },
-  // More posts...
 ]
 
 export default function BlogSection() {
@@ -30,7 +28,7 @@ export default function BlogSection() {
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">From the blog</h2>
           <p className="mt-2 text-lg leading-8 text-gray-600">
-            Learn how to grow your business with our expert advice.
+            Insights on parametric insurance, climate resilience, and agricultural technology in Africa.
           </p>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">

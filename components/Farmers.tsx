@@ -17,7 +17,7 @@ const PlatformFeatures = () => {
     {
       id: 3,
       title: "Automated Damage Assessment",
-      description: "Chainlink oracles, WeatherXM ground stations, and satellite data from Planet and Sentinel combine to deliver accurate, automated crop damage assessments — no manual claims required.",
+      description: "Chainlink oracles, WeatherXM ground stations, NDVI vegetation indices, and satellite data from Planet and Sentinel combine to deliver accurate, automated crop and livestock loss assessments — no manual claims required.",
       image: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=800&h=500&fit=crop",
     },
     {
@@ -49,7 +49,7 @@ const PlatformFeatures = () => {
             Give Your Farmers: No Paperwork. No Delays. Fair Payouts.
           </h2>
           <p className="text-lg leading-8 text-gray-600">
-            Everything your organization needs to launch and manage parametric crop insurance products — from farmer onboarding to automated payouts.
+            Everything your organization needs to launch and manage parametric crop and livestock insurance products — from farmer onboarding to automated payouts.
           </p>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-12 lg:mx-0 lg:max-w-none lg:grid-cols-3">

@@ -5,19 +5,19 @@ const ForOrganizations = () => {
     {
       id: 1,
       title: "Insurance Companies",
-      description: "Launch parametric crop insurance products without building infrastructure from scratch. Leverage our blockchain-powered platform, weather data integrations, and automated claims to go to market in weeks, not years.",
+      description: "Launch parametric crop and livestock insurance products without building infrastructure from scratch. Leverage our blockchain-powered platform, weather and vegetation data integrations, and automated claims to go to market in weeks, not years.",
       image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=500&fit=crop",
     },
     {
       id: 2,
       title: "Agricultural Cooperatives",
-      description: "Protect member farmers with pooled risk management. Offer affordable, automated insurance to your farming communities with transparent on-chain tracking and instant M-Pesa payouts.",
+      description: "Protect member farmers and pastoralists with pooled risk management. Offer affordable, automated crop and livestock insurance to your communities with transparent on-chain tracking and instant M-Pesa payouts.",
       image: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=800&h=500&fit=crop",
     },
     {
       id: 3,
       title: "Agri-Lenders & MFIs",
-      description: "De-risk loan portfolios with embedded crop insurance. Integrate MicroCrop's infrastructure into your lending workflows to protect borrowers and reduce default rates from climate events.",
+      description: "De-risk loan portfolios with embedded crop and livestock insurance. Integrate MicroCrop's infrastructure into your lending workflows to protect borrowers and reduce default rates from climate events.",
       image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&h=500&fit=crop",
     },
     {
@@ -37,7 +37,7 @@ const ForOrganizations = () => {
             Built for the Organizations Serving Farmers
           </h2>
           <p className="text-lg leading-8 text-gray-600">
-            Whether you are an insurer, cooperative, lender, or NGO — MicroCrop provides the infrastructure to launch and scale parametric crop insurance for your stakeholders.
+            Whether you are an insurer, cooperative, lender, or NGO — MicroCrop provides the infrastructure to launch and scale parametric crop and livestock insurance for your stakeholders.
           </p>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-12 lg:mx-0 lg:max-w-none lg:grid-cols-2">

@@ -38,14 +38,14 @@ const HeroSection = () => {
       <div className="flex flex-1 items-center px-5 sm:px-8 md:px-20 py-20 sm:py-28 md:py-32">
         <article className="text-white flex flex-col">
           <h1 className="text-3xl sm:text-4xl md:text-7xl xl:text-8xl font-semibold leading-tight">
-            Parametric Crop Insurance{' '}
+            Parametric Crop &amp; Livestock{' '}
             <br className="hidden md:block" />
-            Infrastructure{' '}
+            Insurance Infrastructure{' '}
             <br className="hidden md:block" />
             for Africa
           </h1>
           <h2 className="max-w-[800px] mt-6 mb-10 sm:mt-8 sm:mb-12 text-lg md:text-xl text-gray-100">
-            Enable your organization to offer automated, blockchain-powered crop insurance to millions of smallholder farmers.
+            Enable your organization to offer automated, blockchain-powered crop and livestock insurance to millions of smallholder farmers and pastoralists.
           </h2>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link

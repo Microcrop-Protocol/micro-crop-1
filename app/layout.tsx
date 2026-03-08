@@ -19,8 +19,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "MicroCrop — Parametric Crop Insurance Infrastructure for Africa",
-  description: "MicroCrop enables insurance companies, cooperatives, agri-lenders, and NGOs to launch automated, blockchain-powered parametric crop insurance for smallholder farmers across Africa.",
+  title: "MicroCrop — Parametric Crop & Livestock Insurance Infrastructure for Africa",
+  description: "MicroCrop enables insurance companies, cooperatives, agri-lenders, and NGOs to launch automated, blockchain-powered parametric crop and livestock insurance for smallholder farmers and pastoralists across Africa.",
 };
 
 export default function RootLayout({

@@ -37,7 +37,7 @@ const differentiators = [
     id: 6,
     imageUrl: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=800&h=1000&fit=crop",
     title: "Satellite & Oracle Data",
-    description: "Automated damage assessments powered by Chainlink oracles, WeatherXM stations, and satellite imagery from Planet and Sentinel for accurate, trustworthy triggers.",
+    description: "Automated assessments powered by Chainlink oracles, WeatherXM stations, NDVI vegetation indices, and satellite imagery from Planet and Sentinel for accurate, trustworthy crop and livestock triggers.",
   },
 ];
 
@@ -52,7 +52,7 @@ const WhyMicroCrop = () => {
             Platform Differentiators
           </h2>
           <p className="mt-4 text-lg leading-8 text-gray-600">
-            Purpose-built infrastructure for parametric crop insurance in Africa, with transparency, compliance, and scale at its core.
+            Purpose-built infrastructure for parametric crop and livestock insurance in Africa, with transparency, compliance, and scale at its core.
           </p>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">

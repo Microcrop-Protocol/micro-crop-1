@@ -16,13 +16,13 @@ export default function AboutSection() {
           <div className="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
             <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
               <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto">
-                Building the infrastructure layer for parametric crop insurance in Africa.
+                Building the infrastructure layer for parametric crop & livestock insurance in Africa.
               </h1>
               <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
                 <p className="text-lg leading-8 text-gray-600">
                   MicroCrop is building the technology platform that will enable insurance companies, cooperatives,
-                  lenders, and NGOs to launch parametric crop insurance products — powered by blockchain, satellite
-                  data, and automated smart contracts. We believe protecting smallholder farmers from climate risk
+                  lenders, and NGOs to launch parametric crop and livestock insurance products — powered by blockchain, satellite
+                  data, vegetation indices, and automated smart contracts. We believe protecting smallholder farmers and pastoralists from climate risk
                   shouldn&apos;t require years of infrastructure development.
                 </p>
               </div>
@@ -154,11 +154,11 @@ export default function AboutSection() {
         <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Our vision: Making parametric crop insurance accessible across Africa.
+              Our vision: Making parametric crop & livestock insurance accessible across Africa.
             </h2>
             <p className="mt-6 text-base leading-7 text-gray-600">
               We&apos;re building toward a future where any organization — insurer, cooperative, lender, or
-              NGO — can launch crop insurance products for their farmers in weeks, not years. Here&apos;s what
+              NGO — can launch crop and livestock insurance products for their farmers and pastoralists in weeks, not years. Here&apos;s what
               we&apos;re working toward.
             </p>
           </div>
@@ -168,7 +168,7 @@ export default function AboutSection() {
               <div className="sm:w-80 sm:shrink lg:w-auto lg:flex-none">
                 <p className="text-lg font-semibold tracking-tight text-gray-900">Initial target markets</p>
                 <p className="mt-2 text-base leading-7 text-gray-600">
-                  Kenya, Nigeria, Ghana, Tanzania, and Uganda — where smallholder farmers face the greatest climate risk.
+                  Kenya, Nigeria, Ghana, Tanzania, and Uganda — where smallholder farmers and pastoralists face the greatest climate risk.
                 </p>
               </div>
             </div>
@@ -203,7 +203,7 @@ export default function AboutSection() {
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               We&apos;re looking for early partner organizations — insurance companies, cooperatives,
-              agri-lenders, and NGOs — who want to bring parametric crop insurance to their farmers.
+              agri-lenders, and NGOs — who want to bring parametric crop and livestock insurance to their farmers and pastoralists.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link

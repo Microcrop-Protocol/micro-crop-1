@@ -7,7 +7,7 @@ const faqs = [
     {
         question: "What is MicroCrop and who is it for?",
         answer:
-            "MicroCrop is a B2B infrastructure platform that enables insurance companies, agricultural cooperatives, agri-lenders, MFIs, and NGOs to offer parametric crop insurance to smallholder farmers across Africa. We provide the technology stack — you bring the distribution.",
+            "MicroCrop is a B2B infrastructure platform that enables insurance companies, agricultural cooperatives, agri-lenders, MFIs, and NGOs to offer parametric crop and livestock insurance to smallholder farmers and pastoralists across Africa. We provide the technology stack — you bring the distribution.",
     },
     {
         question: "How does the partner onboarding process work?",
@@ -17,7 +17,7 @@ const faqs = [
     {
         question: "What data sources power the automated assessments?",
         answer:
-            "We combine Chainlink oracles, WeatherXM ground weather stations, and satellite imagery from Planet and Sentinel to deliver accurate, automated crop damage assessments. When predefined triggers are met, smart contracts automatically process payouts — no manual claims required.",
+            "We combine Chainlink oracles, WeatherXM ground weather stations, NDVI vegetation indices, and satellite imagery from Planet and Sentinel to deliver accurate, automated crop and livestock loss assessments. For crops, triggers include rainfall and temperature anomalies. For livestock, triggers include pasture degradation via NDVI and drought conditions. When predefined triggers are met, smart contracts automatically process payouts — no manual claims required.",
     },
     {
         question: "What does the pricing model look like?",

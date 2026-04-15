@@ -35,7 +35,7 @@ const differentiators = [
   },
   {
     id: 6,
-    imageUrl: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=800&h=1000&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=1000&fit=crop",
     title: "Satellite & Oracle Data",
     description: "Automated assessments powered by Chainlink oracles, WeatherXM stations, NDVI vegetation indices, and satellite imagery from Planet and Sentinel for accurate, trustworthy crop and livestock triggers.",
   },

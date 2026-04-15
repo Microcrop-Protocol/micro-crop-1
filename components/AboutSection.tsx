@@ -45,10 +45,10 @@ export default function AboutSection() {
               Built on technology you can trust
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-green-100">
-              Our platform is built on proven infrastructure — Base for on-chain transparency,
-              Chainlink and WeatherXM for reliable data oracles, and M-Pesa for last-mile farmer payouts.
+              Our platform is built on proven infrastructure — Base for on-chain transparency
+              and Chainlink and WeatherXM for reliable data oracles.
             </p>
-            <div className="mx-auto mt-20 grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-4 sm:gap-x-10 sm:gap-y-14 lg:max-w-4xl lg:grid-cols-4">
+            <div className="mx-auto mt-20 grid max-w-lg grid-cols-3 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:gap-x-10 sm:gap-y-14 lg:max-w-3xl">
               <Image
                 className="max-h-12 w-full object-contain"
                 src="/img/chainlink.png"
@@ -67,13 +67,6 @@ export default function AboutSection() {
                 className="max-h-12 w-full object-contain"
                 src="/img/xm-.png"
                 alt="WeatherXM"
-                width={158}
-                height={48}
-              />
-              <Image
-                className="max-h-12 w-full object-contain"
-                src="/img/mpesa.png"
-                alt="M-Pesa"
                 width={158}
                 height={48}
               />

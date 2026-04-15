@@ -32,7 +32,7 @@ const ForOrganizations = () => {
     <div id="partners" className="bg-gray-50 py-24 sm:py-32 font-poppins">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center mb-16">
-          <h5 className="text-lg font-semibold text-[#1D5B37] mb-2">For Organizations</h5>
+          <p className="text-lg font-semibold text-[#1D5B37] mb-2">For Organizations</p>
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
             Built for the Organizations Serving Farmers
           </h2>

@@ -3,7 +3,7 @@ import { ImageResponse } from "next/og";
 export const runtime = "edge";
 
 export const alt =
-  "MicroCrop — Parametric Crop & Livestock Insurance Infrastructure for Africa";
+  "MicroCrop — Global Parametric Crop & Livestock Insurance Infrastructure";
 export const size = {
   width: 1200,
   height: 630,
@@ -116,7 +116,7 @@ export default function Image() {
             display: "flex",
           }}
         >
-          Parametric Crop & Livestock Insurance Infrastructure for Africa
+          Global Parametric Crop & Livestock Insurance Infrastructure
         </div>
 
         {/* Bottom URL */}

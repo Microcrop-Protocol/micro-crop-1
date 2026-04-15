@@ -24,13 +24,13 @@ const PlatformFeatures = () => {
       id: 4,
       title: "Instant Payouts",
       description: "Smart contract triggers send payouts directly to farmers via M-Pesa through Swypt integration. Fully automated, transparent, and verifiable on-chain.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop",
+      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=500&fit=crop",
     },
     {
       id: 5,
       title: "Analytics Dashboards",
       description: "Platform and org-level dashboards with revenue tracking, policy analytics, farmer demographics, and risk exposure metrics. Full CSV export for compliance and auditing.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop",
+      image: "https://images.unsplash.com/photo-1543286386-713bdd548da4?w=800&h=500&fit=crop",
     },
     {
       id: 6,

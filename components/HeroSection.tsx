@@ -9,7 +9,7 @@ const HeroSection = () => {
     <div className="relative min-h-screen flex flex-col">
       <Image
         src="/img/hero-bg.jpg"
-        alt="African farmland landscape"
+        alt="Farmland landscape at sunset"
         fill
         priority
         sizes="100vw"
@@ -37,27 +37,30 @@ const HeroSection = () => {
       <Navbar />
       <div className="flex flex-1 items-center px-5 sm:px-8 md:px-20 py-20 sm:py-28 md:py-32">
         <article className="text-white flex flex-col">
-          <h1 className="text-3xl sm:text-4xl md:text-7xl xl:text-8xl font-semibold leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-7xl xl:text-8xl font-semibold leading-tight text-balance">
             Parametric Crop &amp; Livestock{' '}
             <br className="hidden md:block" />
             Insurance Infrastructure{' '}
             <br className="hidden md:block" />
-            for Africa
+            for a Changing Climate
           </h1>
-          <h2 className="max-w-[800px] mt-6 mb-10 sm:mt-8 sm:mb-12 text-lg md:text-xl text-gray-100">
-            Enable your organization to offer automated, blockchain-powered crop and livestock insurance to millions of smallholder farmers and pastoralists.
+          <h2 className="max-w-[800px] mt-6 mb-10 sm:mt-8 sm:mb-12 text-lg md:text-xl text-gray-100 text-pretty">
+            Enable your organization to offer automated, blockchain-powered crop and livestock insurance to farmers and pastoralists worldwide. Launching first in Africa, built to scale to every market exposed to climate risk.
           </h2>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href="#contact"
-              className="inline-flex items-center gap-2 py-3 px-6 rounded-full text-white font-semibold hover:bg-white hover:text-black transition-all duration-300 bg-white/10 backdrop-blur-lg border border-white/20 hover:border-white group w-fit"
+              className="inline-flex items-center gap-2 py-3 px-6 rounded-full text-white font-semibold hover:bg-white hover:text-black transition-[background-color,color,border-color] duration-300 bg-white/10 backdrop-blur-lg border border-white/20 hover:border-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black/40 group w-fit"
             >
               <span>Request a Demo</span>
-              <ArrowRightCircleIcon className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+              <ArrowRightCircleIcon
+                aria-hidden="true"
+                className="h-5 w-5 transition-transform duration-300 motion-reduce:transition-none group-hover:translate-x-1"
+              />
             </Link>
             <Link
               href="#platform"
-              className="inline-flex items-center gap-2 py-3 px-6 rounded-full text-white font-semibold hover:bg-white hover:text-black transition-all duration-300 border border-white/40 hover:border-white group w-fit"
+              className="inline-flex items-center gap-2 py-3 px-6 rounded-full text-white font-semibold hover:bg-white hover:text-black transition-[background-color,color,border-color] duration-300 border border-white/40 hover:border-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black/40 group w-fit"
             >
               <span>Explore Platform</span>
             </Link>

@@ -23,7 +23,7 @@ const PlatformFeatures = () => {
     {
       id: 4,
       title: "Instant Payouts",
-      description: "Smart contract triggers send payouts directly to farmers via M-Pesa through Swypt integration. Fully automated, transparent, and verifiable on-chain.",
+      description: "Smart contract triggers send payouts directly to farmers through local mobile money and banking rails. Fully automated, transparent, and verifiable on-chain.",
       image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=500&fit=crop",
     },
     {

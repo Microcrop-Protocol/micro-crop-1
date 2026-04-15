@@ -6,7 +6,7 @@ import Link from 'next/link'
 export default function AboutSection() {
   return (
     <div className="bg-white">
-      <main className="isolate">
+      <div className="isolate">
         {/* Hero section */}
         <div className="relative isolate -z-10 overflow-hidden bg-gradient-to-b from-indigo-100/20 pt-14">
           <div
@@ -15,15 +15,15 @@ export default function AboutSection() {
           />
           <div className="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
             <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-              <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto">
-                Building the infrastructure layer for parametric crop & livestock insurance in Africa.
+              <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto text-balance">
+                Building the global infrastructure layer for parametric crop &amp; livestock insurance.
               </h1>
               <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
                 <p className="text-lg leading-8 text-gray-600">
                   MicroCrop is building the technology platform that will enable insurance companies, cooperatives,
-                  lenders, and NGOs to launch parametric crop and livestock insurance products — powered by blockchain, satellite
-                  data, vegetation indices, and automated smart contracts. We believe protecting smallholder farmers and pastoralists from climate risk
-                  shouldn&apos;t require years of infrastructure development.
+                  lenders, and NGOs worldwide to launch parametric crop and livestock insurance products — powered by blockchain, satellite
+                  data, vegetation indices, and automated smart contracts. We believe protecting farmers and pastoralists from climate risk
+                  shouldn&apos;t require years of infrastructure development — anywhere in the world.
                 </p>
               </div>
               <Image
@@ -97,7 +97,7 @@ export default function AboutSection() {
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Founders</h2>
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 We&apos;re a team of builders passionate about using blockchain, data science, and
-                agricultural technology to solve real problems for African farming communities.
+                agricultural technology to solve real problems for farming communities — starting in the markets we know best, and scaling globally.
               </p>
             </div>
             <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2">
@@ -106,14 +106,20 @@ export default function AboutSection() {
                 <div className="overflow-hidden rounded-2xl bg-gray-100">
                   <Image
                     src="/img/mary.jpeg"
-                    alt="Mary Gathoni — Co-Founder & CEO"
+                    alt="Mary Gathoni — Co-Founder"
                     width={853}
                     height={1280}
                     className="w-full h-auto"
                   />
                 </div>
                 <h3 className="mt-6 text-xl font-bold tracking-tight text-gray-900">Mary Gathoni</h3>
-                <p className="text-base font-semibold text-[#1D5B37]">Co-Founder &amp; CEO</p>
+                <p className="text-base font-semibold text-[#1D5B37]">Co-Founder</p>
+                <a
+                  href="mailto:gathoni@microcrop.app"
+                  className="mt-1 w-fit text-sm text-gray-600 hover:text-[#1D5B37] transition-colors rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D5B37] focus-visible:ring-offset-2"
+                >
+                  gathoni@microcrop.app
+                </a>
                 <p className="mt-4 text-base leading-7 text-gray-600">
                   Mary leads strategy, partnerships, and product direction at MicroCrop. She holds a
                   Bachelor&apos;s degree in International Relations, is a Google-certified Data Analyst,
@@ -121,7 +127,7 @@ export default function AboutSection() {
                   including Strimz (Lisk Hackathon &amp; Celo Incubator winner) and Antikorrupt (UNODC
                   Code for Integrity AI Track winner, 2024). She brings strong experience in stakeholder
                   coordination, data-driven product design, and building technology solutions tailored
-                  for African markets.
+                  for emerging markets and global scale.
                 </p>
               </div>
               {/* Moses */}
@@ -129,14 +135,20 @@ export default function AboutSection() {
                 <div className="overflow-hidden rounded-2xl bg-gray-100">
                   <Image
                     src="/img/moses.jpg"
-                    alt="Moses Timbwa — Co-Founder & CTO"
+                    alt="Moses Timbwa — Co-Founder"
                     width={853}
                     height={1280}
                     className="w-full h-auto"
                   />
                 </div>
                 <h3 className="mt-6 text-xl font-bold tracking-tight text-gray-900">Moses Timbwa</h3>
-                <p className="text-base font-semibold text-[#1D5B37]">Co-Founder &amp; CTO</p>
+                <p className="text-base font-semibold text-[#1D5B37]">Co-Founder</p>
+                <a
+                  href="mailto:moses@microcrop.app"
+                  className="mt-1 w-fit text-sm text-gray-600 hover:text-[#1D5B37] transition-colors rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D5B37] focus-visible:ring-offset-2"
+                >
+                  moses@microcrop.app
+                </a>
                 <p className="mt-4 text-base leading-7 text-gray-600">
                   Moses leads engineering, infrastructure, and smart contract architecture at MicroCrop.
                   He is a full-stack and blockchain developer with experience building scalable systems
@@ -153,8 +165,8 @@ export default function AboutSection() {
         {/* Vision section (replaces stats) */}
         <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Our vision: Making parametric crop & livestock insurance accessible across Africa.
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-balance">
+              Our vision: Making parametric crop &amp; livestock insurance accessible worldwide.
             </h2>
             <p className="mt-6 text-base leading-7 text-gray-600">
               We&apos;re building toward a future where any organization — insurer, cooperative, lender, or
@@ -164,11 +176,11 @@ export default function AboutSection() {
           </div>
           <div className="mx-auto mt-16 flex max-w-2xl flex-col gap-8 lg:mx-0 lg:mt-20 lg:max-w-none lg:flex-row lg:items-end">
             <div className="flex flex-col-reverse justify-between gap-x-16 gap-y-8 rounded-2xl bg-gray-50 p-8 sm:w-3/4 sm:max-w-md sm:flex-row-reverse sm:items-end lg:w-72 lg:max-w-none lg:flex-none lg:flex-col lg:items-start">
-              <p className="flex-none text-3xl font-bold tracking-tight text-[#1D5B37]">5 Countries</p>
+              <p className="flex-none text-3xl font-bold tracking-tight text-[#1D5B37]">Africa First</p>
               <div className="sm:w-80 sm:shrink lg:w-auto lg:flex-none">
-                <p className="text-lg font-semibold tracking-tight text-gray-900">Initial target markets</p>
+                <p className="text-lg font-semibold tracking-tight text-gray-900">Flagship launch markets</p>
                 <p className="mt-2 text-base leading-7 text-gray-600">
-                  Kenya, Nigeria, Ghana, Tanzania, and Uganda — where smallholder farmers and pastoralists face the greatest climate risk.
+                  Launching in Kenya, Nigeria, Ghana, Tanzania, and Uganda — regions with the highest climate exposure and the clearest demand — then expanding globally to Latin America, South &amp; Southeast Asia, and beyond.
                 </p>
               </div>
             </div>
@@ -208,21 +220,21 @@ export default function AboutSection() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
                 href="/#contact"
-                className="rounded-full bg-[#1D5B37] px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-[#164a2c] transition-colors"
+                className="rounded-full bg-[#1D5B37] px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-[#164a2c] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D5B37] focus-visible:ring-offset-2"
               >
                 Get in Touch
               </Link>
               <Link
                 href="/#platform"
-                className="text-sm font-semibold leading-6 text-gray-900 hover:text-[#1D5B37] transition-colors"
+                className="text-sm font-semibold leading-6 text-gray-900 hover:text-[#1D5B37] transition-colors rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D5B37] focus-visible:ring-offset-2"
               >
-                Learn about the platform <span aria-hidden="true">&rarr;</span>
+                Learn about the platform <span aria-hidden="true">→</span>
               </Link>
             </div>
           </div>
         </div>
 
-      </main>
+      </div>
     </div>
   )
 }

@@ -31,7 +31,7 @@ const differentiators = [
     id: 5,
     imageUrl: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&h=1000&fit=crop",
     title: "USSD Support",
-    description: "Farmers without smartphones can check policy status, receive notifications, and confirm payouts via *384* USSD menu — ensuring inclusion for all farmer segments.",
+    description: "Every farmer can check policy status, receive notifications, and confirm payouts — via web, mobile app, or USSD for offline access. Built to meet farmers wherever they are, on whatever device they use.",
   },
   {
     id: 6,
@@ -52,18 +52,18 @@ const WhyMicroCrop = () => {
             Platform Differentiators
           </h2>
           <p className="mt-4 text-lg leading-8 text-gray-600">
-            Purpose-built infrastructure for parametric crop and livestock insurance in Africa, with transparency, compliance, and scale at its core.
+            Purpose-built infrastructure for parametric crop and livestock insurance worldwide, with transparency, compliance, and scale at its core.
           </p>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {differentiators.map((item) => (
             <article
               key={item.id}
-              className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80"
+              className="group relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80"
             >
               <Image
                 src={item.imageUrl}
-                alt={item.title}
+                alt=""
                 width={800}
                 height={1000}
                 sizes="(max-width: 1024px) 100vw, 33vw"
@@ -75,9 +75,13 @@ const WhyMicroCrop = () => {
               <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
                 {item.title}
               </h3>
+              <p className="mt-3 text-sm leading-6 text-gray-200 lg:hidden">
+                {item.description}
+              </p>
 
               <div
-                className="absolute inset-0 bg-[#1D5B37] bg-opacity-75 flex items-center justify-center p-8 transition-opacity duration-300 opacity-0 hover:opacity-100"
+                aria-hidden="true"
+                className="hidden lg:flex absolute inset-0 bg-[#1D5B37]/75 items-center justify-center p-8 opacity-0 transition-opacity duration-300 motion-reduce:transition-none group-hover:opacity-100 group-focus-within:opacity-100"
               >
                 <p className="text-white text-center">{item.description}</p>
               </div>

@@ -7,7 +7,7 @@ const faqs = [
     {
         question: "What is MicroCrop and who is it for?",
         answer:
-            "MicroCrop is a B2B infrastructure platform that enables insurance companies, agricultural cooperatives, agri-lenders, MFIs, and NGOs to offer parametric crop and livestock insurance to smallholder farmers and pastoralists across Africa. We provide the technology stack — you bring the distribution.",
+            "MicroCrop is a B2B infrastructure platform that enables insurance companies, agricultural cooperatives, agri-lenders, MFIs, and NGOs worldwide to offer parametric crop and livestock insurance to farmers and pastoralists. We provide the technology stack — you bring the distribution. Our flagship deployments are in Africa, with the platform designed to scale to any market exposed to climate risk.",
     },
     {
         question: "How does the partner onboarding process work?",
@@ -43,10 +43,10 @@ const FaqsSection = () => {
                                 {({ open }) => (
                                     <>
                                         <dt>
-                                            <DisclosureButton className="flex w-full items-start justify-between text-left text-white hover:opacity-80 transition-opacity py-4">
+                                            <DisclosureButton className="flex w-full items-start justify-between text-left text-white hover:opacity-80 transition-opacity py-4 rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#1D5B37]">
                                                 <span className="text-lg font-semibold leading-7">{faq.question}</span>
                                                 <span className="ml-6 flex h-7 items-center">
-                                                    <span className={`transform transition-transform duration-300 ${open ? 'rotate-180' : 'rotate-0'}`}>
+                                                    <span className={`transform transition-transform duration-300 motion-reduce:transition-none ${open ? 'rotate-180' : 'rotate-0'}`}>
                                                         {open ? (
                                                             <MinusSmallIcon className="h-6 w-6" aria-hidden="true" />
                                                         ) : (
@@ -58,9 +58,9 @@ const FaqsSection = () => {
                                         </dt>
                                         <DisclosurePanel
                                             as="dd"
-                                            className="pr-12 pb-4 overflow-hidden transition-all duration-300 ease-in-out"
+                                            className="pr-12 pb-4 overflow-hidden transition-[max-height,opacity] duration-300 ease-in-out motion-reduce:transition-none"
                                         >
-                                            <p className="text-base leading-7 text-gray-100 animate-fade-in">{faq.answer}</p>
+                                            <p className="text-base leading-7 text-gray-100 animate-fade-in motion-reduce:animate-none">{faq.answer}</p>
                                         </DisclosurePanel>
                                     </>
                                 )}

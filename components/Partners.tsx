@@ -11,7 +11,7 @@ const ForOrganizations = () => {
     {
       id: 2,
       title: "Agricultural Cooperatives",
-      description: "Protect member farmers and pastoralists with pooled risk management. Offer affordable, automated crop and livestock insurance to your communities with transparent on-chain tracking and instant M-Pesa payouts.",
+      description: "Protect member farmers and pastoralists with pooled risk management. Offer affordable, automated crop and livestock insurance to your communities with transparent on-chain tracking and instant payouts through local mobile money and banking rails.",
       image: "https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&h=500&fit=crop",
     },
     {

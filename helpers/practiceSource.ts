@@ -20,14 +20,14 @@ export const practiceSource = [
         id: 3,
         imageUrl: MicroCropImage,
         title: "Multi-Peril Coverage",
-        description: "Comprehensive protection against drought, excessive rainfall, frost, hailstorms, and pest infestations. Flexible coverage options designed specifically for smallholder farmers across Africa.",
+        description: "Comprehensive protection against drought, excessive rainfall, frost, hailstorms, and pest infestations. Flexible coverage options designed for every farmer — from family farms to commercial agribusiness.",
         isText: false
     },
     {
         id: 4,
         imageUrl: MicroCropImage,
-        title: "Affordable Premiums",
-        description: "Micro-insurance plans starting from as low as $5 per season. Pay-as-you-grow pricing ensures crop insurance remains accessible to farmers of all scales, with no hidden fees.",
+        title: "Flexible Premiums",
+        description: "Coverage plans that scale with your operation — from entry-level policies to enterprise-grade protection. Transparent, usage-based pricing with no hidden fees, accessible to farmers of every size.",
         isText: true
     },
     {

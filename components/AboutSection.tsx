@@ -48,23 +48,23 @@ export default function AboutSection() {
               Our platform is built on proven infrastructure — Base for on-chain transparency
               and Chainlink and WeatherXM for reliable data oracles.
             </p>
-            <div className="mx-auto mt-20 grid max-w-lg grid-cols-3 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:gap-x-10 sm:gap-y-14 lg:max-w-3xl">
+            <div className="mx-auto mt-16 flex max-w-2xl flex-wrap items-center justify-center gap-x-12 gap-y-10 sm:mt-20 sm:gap-x-16 lg:gap-x-20">
               <Image
-                className="max-h-12 w-full object-contain"
+                className="h-10 w-auto object-contain sm:h-12"
                 src="/img/chainlink.png"
                 alt="Chainlink"
                 width={158}
                 height={48}
               />
               <Image
-                className="max-h-12 w-full object-contain"
+                className="h-10 w-auto object-contain sm:h-12"
                 src="/img/Base.png"
                 alt="Base"
                 width={158}
                 height={48}
               />
               <Image
-                className="max-h-12 w-full object-contain"
+                className="h-10 w-auto object-contain sm:h-12"
                 src="/img/xm-.png"
                 alt="WeatherXM"
                 width={158}

@@ -5,14 +5,16 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'About Us — MicroCrop',
-  description: 'Meet the team behind MicroCrop — building parametric crop insurance infrastructure for Africa.',
+  description: 'Meet the team behind MicroCrop — building global parametric crop and livestock insurance infrastructure, launching first in Africa.',
 }
 
 export default function AboutPage() {
   return (
     <div className="font-poppins">
       <Navbar />
-      <AboutSection />
+      <main id="main">
+        <AboutSection />
+      </main>
       <Footer />
     </div>
   )

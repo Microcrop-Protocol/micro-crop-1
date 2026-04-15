@@ -5,14 +5,16 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Blog — MicroCrop',
-  description: 'Insights on parametric insurance, climate resilience, and agricultural technology in Africa.',
+  description: 'Insights on parametric insurance, climate resilience, and agricultural technology from markets around the world.',
 }
 
 export default function BlogPage() {
   return (
     <div className="font-poppins">
       <Navbar />
-      <BlogSection />
+      <main id="main">
+        <BlogSection />
+      </main>
       <Footer />
     </div>
   )

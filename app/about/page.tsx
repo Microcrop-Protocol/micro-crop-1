@@ -4,8 +4,17 @@ import Navbar from '@/components/Navbar'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'About Us — MicroCrop',
-  description: 'Meet the team behind MicroCrop — building global parametric crop and livestock insurance infrastructure, launching first in Africa.',
+  title: 'About — The Team Building Global Parametric Insurance Infrastructure',
+  description: 'Meet the founders of MicroCrop — Mary Gathoni and Moses Timbwa — and the mission to make parametric crop and livestock insurance accessible to farmers and pastoralists worldwide.',
+  alternates: {
+    canonical: '/about',
+  },
+  openGraph: {
+    title: 'About MicroCrop',
+    description: 'Meet the founders of MicroCrop and the mission to make parametric crop and livestock insurance accessible worldwide.',
+    url: 'https://microcrop.app/about',
+    type: 'website',
+  },
 }
 
 export default function AboutPage() {

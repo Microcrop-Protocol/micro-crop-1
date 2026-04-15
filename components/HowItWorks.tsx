@@ -30,7 +30,7 @@ const steps = [
     id: 3,
     question: "04 Payout",
     answer:
-      "Automated assessments powered by Chainlink oracles, WeatherXM stations, NDVI vegetation indices, and satellite imagery (Planet/Sentinel) trigger smart contract payouts directly to farmers and pastoralists via M-Pesa through Swypt. No manual claims processing required.",
+      "Automated assessments powered by Chainlink oracles, WeatherXM stations, NDVI vegetation indices, and satellite imagery (Planet/Sentinel) trigger smart contract payouts directly to farmers and pastoralists through local mobile money and banking rails. No manual claims processing required.",
     image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=600&fit=crop",
   },
 ]

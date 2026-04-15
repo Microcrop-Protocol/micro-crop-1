@@ -11,14 +11,16 @@ import WhyMicroCrop from "@/components/PracticeAreas";
 export default function Home() {
   return (
     <div className="font-poppins">
-      <HeroSection />
-      <LogoClouds />
-      <HowItWorks />
-      <PlatformFeatures />
-      <ForOrganizations />
-      <WhyMicroCrop />
-      <FaqsSection />
-      <PartnerCTA />
+      <main id="main">
+        <HeroSection />
+        <LogoClouds />
+        <HowItWorks />
+        <PlatformFeatures />
+        <ForOrganizations />
+        <WhyMicroCrop />
+        <FaqsSection />
+        <PartnerCTA />
+      </main>
       <Footer />
     </div>
   );

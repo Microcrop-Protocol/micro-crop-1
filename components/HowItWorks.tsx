@@ -10,7 +10,7 @@ const steps = [
     question: "01 Onboard",
     answer:
       "MicroCrop team sets up your organization, deploys your dedicated risk pool on Base, and configures your white-label environment. Get started with a fully isolated multi-tenant setup tailored to your operations.",
-    image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1200&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&h=600&fit=crop",
   },
   {
     id: 1,

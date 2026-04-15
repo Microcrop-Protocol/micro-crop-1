@@ -1,10 +1,8 @@
 import Image from 'next/image'
-import Link from 'next/link'
 
 const posts = [
   {
     id: 1,
-    href: '/blog/why-parametric-insurance-is-the-future',
     title: 'Why Parametric Insurance Is the Future for Farmers Worldwide',
     description:
       'Traditional crop insurance relies on slow, manual claims processes that fail farmers in every market. Parametric insurance, powered by weather data and smart contracts, offers a faster, more transparent alternative — and MicroCrop is building the infrastructure to make it globally scalable.',
@@ -31,14 +29,16 @@ export default function BlogSection() {
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">From the blog</h2>
-          <p className="mt-2 text-lg leading-8 text-gray-600">
+          <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-balance">
+            MicroCrop Blog
+          </h1>
+          <p className="mt-4 text-lg leading-8 text-gray-600 text-pretty">
             Insights on parametric insurance, climate resilience, and agricultural technology from markets around the world.
           </p>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {posts.map((post) => (
-            <article key={post.id} className="relative flex flex-col items-start justify-between min-w-0">
+            <article key={post.id} className="flex flex-col items-start justify-between min-w-0">
               <div className="relative w-full">
                 <Image
                   src={post.imageUrl}
@@ -60,15 +60,9 @@ export default function BlogSection() {
                   </span>
                 </div>
                 <div className="mt-3">
-                  <h3 className="text-lg font-semibold leading-6 text-gray-900">
-                    <Link
-                      href={post.href}
-                      className="rounded-sm transition-colors hover:text-[#1D5B37] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D5B37] focus-visible:ring-offset-2"
-                    >
-                      <span className="absolute inset-0" aria-hidden="true" />
-                      {post.title}
-                    </Link>
-                  </h3>
+                  <h2 className="text-lg font-semibold leading-6 text-gray-900">
+                    {post.title}
+                  </h2>
                   <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">{post.description}</p>
                 </div>
                 <div className="mt-8 flex items-center gap-x-4">

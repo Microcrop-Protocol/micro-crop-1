@@ -47,9 +47,9 @@ const HeroSection = () => {
             <br className="hidden md:block" />
             When Drought or Flood Hits
           </h1>
-          <h2 className="max-w-[800px] mt-6 mb-10 sm:mt-8 sm:mb-12 text-lg md:text-xl text-gray-100 text-pretty">
+          <p className="max-w-[800px] mt-6 mb-10 sm:mt-8 sm:mb-12 text-lg md:text-xl text-gray-100 text-pretty">
             Insurers, cooperatives, lenders, and agtech platforms run parametric crop and livestock insurance on MicroCrop. Farmers pay premiums by mobile money and get paid automatically when an index trigger fires. No claims to file. Built for every market exposed to climate risk.
-          </h2>
+          </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href="#contact"

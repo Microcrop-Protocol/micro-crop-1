@@ -44,11 +44,11 @@ const differentiators = [
 
 const WhyMicroCrop = () => {
   return (
-    <div className="bg-white py-24 sm:py-32 font-poppins">
+    <section aria-labelledby="why-microcrop-heading" className="bg-white py-24 sm:py-32 font-poppins">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center mb-4">
           <p className="text-lg font-semibold text-emerald-700 mb-2">Why MicroCrop</p>
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 id="why-microcrop-heading" className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Platform Differentiators
           </h2>
           <p className="mt-4 text-lg leading-8 text-gray-600">
@@ -89,7 +89,7 @@ const WhyMicroCrop = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

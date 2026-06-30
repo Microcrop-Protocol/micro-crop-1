@@ -1,11 +1,23 @@
 import BlogSection from "@/components/BlogSection";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import JsonLd from "@/components/seo/JsonLd";
 import { listPosts } from "@/lib/blog";
 import type { Metadata } from "next";
 
+const SITE_URL = "https://microcrop.app";
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+    { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/blog` },
+  ],
+};
+
 export const metadata: Metadata = {
-  title: "Blog — Insights on Parametric Insurance & Climate Resilience",
+  title: { absolute: "MicroCrop Blog — Parametric Insurance Insights" },
   description:
     "Insights on parametric insurance, climate resilience, and agricultural technology from markets around the world.",
   alternates: {
@@ -31,6 +43,7 @@ export default async function BlogPage() {
 
   return (
     <div className="font-poppins">
+      <JsonLd data={breadcrumbJsonLd} />
       <Navbar />
       <main id="main">
         <BlogSection posts={posts} />

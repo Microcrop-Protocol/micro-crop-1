@@ -9,28 +9,28 @@ const steps = [
     id: 0,
     question: "01 Onboard",
     answer:
-      "MicroCrop team sets up your organization, deploys your dedicated risk pool on Base, and configures your white-label environment. Get started with a fully isolated multi-tenant setup tailored to your operations.",
+      "The MicroCrop team sets up your organization, provisions your dedicated coverage infrastructure, and configures your white-label environment. You get an isolated, multi-tenant setup matched to how you operate.",
     image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&h=600&fit=crop",
   },
   {
     id: 1,
     question: "02 Configure",
     answer:
-      "Add staff accounts, import farmers and pastoralists in bulk or one-by-one with built-in KYC management, and define coverage parameters for your crop or livestock insurance products. Our platform supports full customization of policy terms, premium structures, and payout triggers.",
+      "Add staff accounts. Import farmers and pastoralists in bulk or one at a time, with KYC built in. Set coverage terms, premium structures, and payout triggers for each crop and livestock product.",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=600&fit=crop",
   },
   {
     id: 2,
     question: "03 Monitor",
     answer:
-      "Real-time dashboards track policies, premiums collected, weather events, and satellite data across your portfolio. Access org-level analytics with revenue breakdowns, farmer demographics, and risk exposure metrics — all exportable via CSV for compliance and auditing.",
+      "Real-time dashboards track policies, premiums collected, and field conditions across your portfolio. Access org-level analytics with revenue breakdowns, farmer demographics, and risk exposure metrics — all exportable via CSV for compliance and auditing.",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=600&fit=crop",
   },
   {
     id: 3,
     question: "04 Payout",
     answer:
-      "Automated assessments powered by Chainlink oracles, WeatherXM stations, NDVI vegetation indices, and satellite imagery (Planet/Sentinel) trigger smart contract payouts directly to farmers and pastoralists through local mobile money and banking rails. No manual claims processing required.",
+      "When an index trigger fires, payouts go straight to farmers and pastoralists through mobile money and local banking rails. Settlement runs automatically in the background. No claims to file, no manual processing.",
     image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=600&fit=crop",
   },
 ]

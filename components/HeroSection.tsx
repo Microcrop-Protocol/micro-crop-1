@@ -37,15 +37,18 @@ const HeroSection = () => {
       <Navbar />
       <div className="flex flex-1 items-center px-5 sm:px-8 md:px-20 py-20 sm:py-28 md:py-32">
         <article className="text-white flex flex-col">
+          <p className="mb-5 text-sm sm:text-base font-semibold uppercase tracking-wide text-gray-100">
+            Backed by Protocol Labs
+          </p>
           <h1 className="text-3xl sm:text-4xl md:text-7xl xl:text-8xl font-semibold leading-tight text-balance">
-            Parametric Crop &amp; Livestock{' '}
+            Crop &amp; Livestock Insurance{' '}
             <br className="hidden md:block" />
-            Insurance Infrastructure{' '}
+            That Pays Out Automatically{' '}
             <br className="hidden md:block" />
-            for a Changing Climate
+            When Drought or Flood Hits
           </h1>
           <h2 className="max-w-[800px] mt-6 mb-10 sm:mt-8 sm:mb-12 text-lg md:text-xl text-gray-100 text-pretty">
-            Enable your organization to offer automated, blockchain-powered crop and livestock insurance to farmers and pastoralists worldwide. Launching first in Africa, built to scale to every market exposed to climate risk.
+            Insurers, cooperatives, lenders, and agtech platforms run parametric crop and livestock insurance on MicroCrop. Farmers pay premiums by mobile money and get paid automatically when an index trigger fires. No claims to file. Built for every market exposed to climate risk.
           </h2>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link

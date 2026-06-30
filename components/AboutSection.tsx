@@ -21,8 +21,8 @@ export default function AboutSection() {
               <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
                 <p className="text-lg leading-8 text-gray-600">
                   MicroCrop is building the technology platform that will enable insurance companies, cooperatives,
-                  lenders, and NGOs worldwide to launch parametric crop and livestock insurance products — powered by blockchain, satellite
-                  data, vegetation indices, and automated smart contracts. We believe protecting farmers and pastoralists from climate risk
+                  lenders, and NGOs worldwide to launch parametric crop and livestock insurance products — powered by automated,
+                  index-based settlement and reliable weather and vegetation data. Protecting farmers and pastoralists from climate risk
                   shouldn&apos;t require years of infrastructure development — anywhere in the world.
                 </p>
               </div>
@@ -45,17 +45,10 @@ export default function AboutSection() {
               Built on technology you can trust
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-green-100">
-              Our platform is built on proven infrastructure — Base for on-chain transparency
-              and Chainlink and WeatherXM for reliable data oracles.
+              Our platform is built on proven infrastructure for transparency,
+              verifiability, and reliable data.
             </p>
             <div className="mx-auto mt-16 flex max-w-2xl flex-wrap items-center justify-center gap-x-12 gap-y-10 sm:mt-20 sm:gap-x-16 lg:gap-x-20">
-              <Image
-                className="h-10 w-auto object-contain sm:h-12"
-                src="/img/chainlink.png"
-                alt="Chainlink"
-                width={158}
-                height={48}
-              />
               <Image
                 className="h-10 w-auto object-contain sm:h-12"
                 src="/img/Base.png"
@@ -89,7 +82,7 @@ export default function AboutSection() {
             <div className="mx-auto max-w-2xl lg:mx-0">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Founders</h2>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                We&apos;re a team of builders passionate about using blockchain, data science, and
+                We&apos;re a team of builders using blockchain, data science, and
                 agricultural technology to solve real problems for farming communities — starting in the markets we know best, and scaling globally.
               </p>
             </div>
@@ -181,7 +174,7 @@ export default function AboutSection() {
               <p className="flex-none text-3xl font-bold tracking-tight text-white">Transparent</p>
               <div className="sm:w-80 sm:shrink lg:w-auto lg:flex-none">
                 <p className="text-lg font-semibold tracking-tight text-white">
-                  Simple platform fee, auto-collected on-chain.
+                  Simple platform fee, collected automatically.
                 </p>
                 <p className="mt-2 text-base leading-7 text-gray-400">
                   Partners set their own pricing for farmers. No hidden costs in our revenue model.

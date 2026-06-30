@@ -7,19 +7,19 @@ const differentiators = [
     id: 1,
     imageUrl: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800&h=1000&fit=crop",
     title: "Transparent Platform Fee",
-    description: "Simple, transparent revenue model with fees auto-collected on-chain. No hidden costs — partners keep the majority of premiums collected.",
+    description: "Simple, transparent revenue model with fees collected automatically. No hidden costs — partners keep the majority of premiums collected.",
   },
   {
     id: 2,
     imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=1000&fit=crop",
     title: "Multi-Tenant Architecture",
-    description: "Each partner gets an isolated organization, dedicated risk pool, and separated data. Full white-label support with independent configurations.",
+    description: "Each partner gets an isolated organization, dedicated coverage infrastructure, and separated data. Full white-label support with independent configurations.",
   },
   {
     id: 3,
     imageUrl: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=1000&fit=crop",
-    title: "On-Chain Transparency",
-    description: "All premiums, payouts, and platform fees are verifiable on Base. Provide your stakeholders and regulators with full auditability of every transaction.",
+    title: "Full Transparency",
+    description: "All premiums, payouts, and platform fees are independently verifiable. Provide your stakeholders and regulators with full auditability of every transaction.",
   },
   {
     id: 4,
@@ -36,8 +36,8 @@ const differentiators = [
   {
     id: 6,
     imageUrl: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=1000&fit=crop",
-    title: "Satellite & Oracle Data",
-    description: "Automated assessments powered by Chainlink oracles, WeatherXM stations, NDVI vegetation indices, and satellite imagery from Planet and Sentinel for accurate, trustworthy crop and livestock triggers.",
+    title: "Data-Driven Triggers",
+    description: "Automated assessments draw on weather, rainfall, and satellite vegetation data to fire accurate, tamper-resistant payout triggers for crops and livestock. Every decision is rule-based, not discretionary.",
   },
 ];
 

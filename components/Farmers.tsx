@@ -44,7 +44,7 @@ const PlatformFeatures = () => {
     <div id="platform" className="bg-white py-24 sm:py-32 font-poppins">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center mb-16">
-          <p className="text-lg font-semibold text-[#1D5B37] mb-2">Platform Capabilities</p>
+          <p className="text-lg font-semibold text-emerald-700 mb-2">Platform Capabilities</p>
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
             Give Your Farmers: No Paperwork. No Delays. Fair Payouts.
           </h2>
@@ -71,7 +71,7 @@ const PlatformFeatures = () => {
               </div>
               <div className="max-w-xl">
                 <div className="relative">
-                  <h3 className="mt-6 text-xl font-semibold leading-6 text-gray-900 group-hover:text-[#1D5B37] transition-colors">
+                  <h3 className="mt-6 text-xl font-semibold leading-6 text-gray-900 group-hover:text-emerald-700 transition-colors">
                     {feature.title}
                   </h3>
                   <p className="mt-4 text-sm leading-6 text-gray-600">

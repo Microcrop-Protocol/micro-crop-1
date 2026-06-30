@@ -47,7 +47,7 @@ const WhyMicroCrop = () => {
     <div className="bg-white py-24 sm:py-32 font-poppins">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center mb-4">
-          <p className="text-lg font-semibold text-[#1D5B37] mb-2">Why MicroCrop</p>
+          <p className="text-lg font-semibold text-emerald-700 mb-2">Why MicroCrop</p>
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Platform Differentiators
           </h2>
@@ -81,7 +81,7 @@ const WhyMicroCrop = () => {
 
               <div
                 aria-hidden="true"
-                className="hidden lg:flex absolute inset-0 bg-[#1D5B37]/75 items-center justify-center p-8 opacity-0 transition-opacity duration-300 motion-reduce:transition-none group-hover:opacity-100 group-focus-within:opacity-100"
+                className="hidden lg:flex absolute inset-0 bg-emerald-900/80 items-center justify-center p-8 opacity-0 transition-opacity duration-300 motion-reduce:transition-none group-hover:opacity-100 group-focus-within:opacity-100"
               >
                 <p className="text-white text-center">{item.description}</p>
               </div>

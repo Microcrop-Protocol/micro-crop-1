@@ -32,7 +32,7 @@ const ForOrganizations = () => {
     <div id="partners" className="bg-gray-50 py-24 sm:py-32 font-poppins">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center mb-16">
-          <p className="text-lg font-semibold text-[#1D5B37] mb-2">For Organizations</p>
+          <p className="text-lg font-semibold text-emerald-700 mb-2">For Organizations</p>
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
             Built for the Organizations Serving Farmers
           </h2>
@@ -59,7 +59,7 @@ const ForOrganizations = () => {
               </div>
               <div className="max-w-xl">
                 <div className="relative">
-                  <h3 className="mt-6 text-xl font-semibold leading-6 text-gray-900 group-hover:text-[#1D5B37] transition-colors">
+                  <h3 className="mt-6 text-xl font-semibold leading-6 text-gray-900 group-hover:text-emerald-700 transition-colors">
                     {useCase.title}
                   </h3>
                   <p className="mt-4 text-sm leading-6 text-gray-600">

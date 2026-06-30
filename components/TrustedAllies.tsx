@@ -8,7 +8,7 @@ export default function TrustedAllies() {
           Trusted by Leading Agricultural Organizations
         </h2>
         <div className="-mx-6 grid grid-cols-2 gap-4 overflow-hidden sm:mx-0 sm:gap-6 md:grid-cols-3">
-          <div className="bg-[#1D5B37] rounded-lg p-6 sm:p-8 lg:p-10 flex items-center justify-center transition-transform duration-300 hover:scale-105">
+          <div className="bg-emerald-800 rounded-lg p-6 sm:p-8 lg:p-10 flex items-center justify-center transition-transform duration-300 hover:scale-105">
             <Image
               className="max-h-12 w-full object-contain"
               src="https://tailwindcss.com/plus-assets/img/logos/158x48/transistor-logo-white.svg"
@@ -17,7 +17,7 @@ export default function TrustedAllies() {
               height={48}
             />
           </div>
-          <div className="bg-[#1D5B37] rounded-lg p-6 sm:p-8 lg:p-10 flex items-center justify-center transition-transform duration-300 hover:scale-105">
+          <div className="bg-emerald-800 rounded-lg p-6 sm:p-8 lg:p-10 flex items-center justify-center transition-transform duration-300 hover:scale-105">
             <Image
               className="max-h-12 w-full object-contain"
               src="https://tailwindcss.com/plus-assets/img/logos/158x48/reform-logo-white.svg"
@@ -26,7 +26,7 @@ export default function TrustedAllies() {
               height={48}
             />
           </div>
-          <div className="bg-[#1D5B37] rounded-lg p-6 sm:p-8 lg:p-10 flex items-center justify-center transition-transform duration-300 hover:scale-105">
+          <div className="bg-emerald-800 rounded-lg p-6 sm:p-8 lg:p-10 flex items-center justify-center transition-transform duration-300 hover:scale-105">
             <Image
               className="max-h-12 w-full object-contain"
               src="https://tailwindcss.com/plus-assets/img/logos/158x48/tuple-logo-white.svg"
@@ -35,7 +35,7 @@ export default function TrustedAllies() {
               height={48}
             />
           </div>
-          <div className="bg-[#1D5B37] rounded-lg p-6 sm:p-8 lg:p-10 flex items-center justify-center transition-transform duration-300 hover:scale-105">
+          <div className="bg-emerald-800 rounded-lg p-6 sm:p-8 lg:p-10 flex items-center justify-center transition-transform duration-300 hover:scale-105">
             <Image
               className="max-h-12 w-full object-contain"
               src="https://tailwindcss.com/plus-assets/img/logos/158x48/savvycal-logo-white.svg"
@@ -44,7 +44,7 @@ export default function TrustedAllies() {
               height={48}
             />
           </div>
-          <div className="bg-[#1D5B37] rounded-lg p-6 sm:p-8 lg:p-10 flex items-center justify-center transition-transform duration-300 hover:scale-105">
+          <div className="bg-emerald-800 rounded-lg p-6 sm:p-8 lg:p-10 flex items-center justify-center transition-transform duration-300 hover:scale-105">
             <Image
               className="max-h-12 w-full object-contain"
               src="https://tailwindcss.com/plus-assets/img/logos/158x48/statamic-logo-white.svg"
@@ -53,7 +53,7 @@ export default function TrustedAllies() {
               height={48}
             />
           </div>
-          <div className="bg-[#1D5B37] rounded-lg p-6 sm:p-8 lg:p-10 flex items-center justify-center transition-transform duration-300 hover:scale-105">
+          <div className="bg-emerald-800 rounded-lg p-6 sm:p-8 lg:p-10 flex items-center justify-center transition-transform duration-300 hover:scale-105">
             <Image
               className="max-h-12 w-full object-contain"
               src="https://tailwindcss.com/plus-assets/img/logos/158x48/statamic-logo-white.svg"

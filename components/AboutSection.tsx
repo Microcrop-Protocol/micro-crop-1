@@ -40,11 +40,11 @@ export default function AboutSection() {
 
         {/* Technology stack */}
         <div className="mx-auto mt-32 max-w-7xl sm:mt-40 sm:px-6 lg:px-8">
-          <div className="relative isolate overflow-hidden bg-[#1D5B37] px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
+          <div className="relative isolate overflow-hidden bg-gradient-to-br from-emerald-700 to-teal-700 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
             <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
               Built on technology you can trust
             </h2>
-            <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-green-100">
+            <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-emerald-50">
               Our platform is built on proven infrastructure for transparency,
               verifiability, and reliable data.
             </p>
@@ -66,7 +66,7 @@ export default function AboutSection() {
             </div>
             <div className="absolute -top-24 right-0 -z-10 transform-gpu blur-3xl" aria-hidden="true">
               <div
-                className="aspect-[1404/767] w-[87.75rem] bg-gradient-to-r from-[#a8d5ba] to-[#1D5B37] opacity-25"
+                className="aspect-[1404/767] w-[87.75rem] bg-gradient-to-r from-emerald-300 to-teal-700 opacity-25"
                 style={{
                   clipPath:
                     'polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)',
@@ -99,10 +99,10 @@ export default function AboutSection() {
                   />
                 </div>
                 <h3 className="mt-6 text-xl font-bold tracking-tight text-gray-900">Mary Gathoni</h3>
-                <p className="text-base font-semibold text-[#1D5B37]">Co-Founder</p>
+                <p className="text-base font-semibold text-emerald-700">Co-Founder</p>
                 <a
                   href="mailto:gathoni@microcrop.app"
-                  className="mt-1 w-fit text-sm text-gray-600 hover:text-[#1D5B37] transition-colors rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D5B37] focus-visible:ring-offset-2"
+                  className="mt-1 w-fit text-sm text-gray-600 hover:text-emerald-700 transition-colors rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 focus-visible:ring-offset-2"
                 >
                   gathoni@microcrop.app
                 </a>
@@ -128,10 +128,10 @@ export default function AboutSection() {
                   />
                 </div>
                 <h3 className="mt-6 text-xl font-bold tracking-tight text-gray-900">Moses Timbwa</h3>
-                <p className="text-base font-semibold text-[#1D5B37]">Co-Founder</p>
+                <p className="text-base font-semibold text-emerald-700">Co-Founder</p>
                 <a
                   href="mailto:moses@microcrop.app"
-                  className="mt-1 w-fit text-sm text-gray-600 hover:text-[#1D5B37] transition-colors rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D5B37] focus-visible:ring-offset-2"
+                  className="mt-1 w-fit text-sm text-gray-600 hover:text-emerald-700 transition-colors rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 focus-visible:ring-offset-2"
                 >
                   moses@microcrop.app
                 </a>
@@ -162,7 +162,7 @@ export default function AboutSection() {
           </div>
           <div className="mx-auto mt-16 flex max-w-2xl flex-col gap-8 lg:mx-0 lg:mt-20 lg:max-w-none lg:flex-row lg:items-end">
             <div className="flex flex-col-reverse justify-between gap-x-16 gap-y-8 rounded-2xl bg-gray-50 p-8 sm:w-3/4 sm:max-w-md sm:flex-row-reverse sm:items-end lg:w-72 lg:max-w-none lg:flex-none lg:flex-col lg:items-start">
-              <p className="flex-none text-3xl font-bold tracking-tight text-[#1D5B37]">Africa First</p>
+              <p className="flex-none text-3xl font-bold tracking-tight text-emerald-700">Africa First</p>
               <div className="sm:w-80 sm:shrink lg:w-auto lg:flex-none">
                 <p className="text-lg font-semibold tracking-tight text-gray-900">Flagship launch markets</p>
                 <p className="mt-2 text-base leading-7 text-gray-600">
@@ -181,11 +181,11 @@ export default function AboutSection() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col-reverse justify-between gap-x-16 gap-y-8 rounded-2xl bg-[#1D5B37] p-8 sm:w-11/12 sm:max-w-xl sm:flex-row-reverse sm:items-end lg:w-full lg:max-w-none lg:flex-auto lg:flex-col lg:items-start lg:gap-y-28">
+            <div className="flex flex-col-reverse justify-between gap-x-16 gap-y-8 rounded-2xl bg-emerald-800 p-8 sm:w-11/12 sm:max-w-xl sm:flex-row-reverse sm:items-end lg:w-full lg:max-w-none lg:flex-auto lg:flex-col lg:items-start lg:gap-y-28">
               <p className="flex-none text-3xl font-bold tracking-tight text-white">Millions</p>
               <div className="sm:w-80 sm:shrink lg:w-auto lg:flex-none">
                 <p className="text-lg font-semibold tracking-tight text-white">Farmers we aim to reach</p>
-                <p className="mt-2 text-base leading-7 text-green-200">
+                <p className="mt-2 text-base leading-7 text-emerald-100">
                   Through partner organizations — insurers, cooperatives, lenders, and NGOs — serving farming communities at scale.
                 </p>
               </div>
@@ -206,13 +206,13 @@ export default function AboutSection() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
                 href="/#contact"
-                className="rounded-full bg-[#1D5B37] px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-[#164a2c] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D5B37] focus-visible:ring-offset-2"
+                className="rounded-full bg-emerald-600 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-emerald-700 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 focus-visible:ring-offset-2"
               >
                 Get in Touch
               </Link>
               <Link
                 href="/#platform"
-                className="text-sm font-semibold leading-6 text-gray-900 hover:text-[#1D5B37] transition-colors rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D5B37] focus-visible:ring-offset-2"
+                className="text-sm font-semibold leading-6 text-gray-900 hover:text-emerald-700 transition-colors rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 focus-visible:ring-offset-2"
               >
                 Learn about the platform <span aria-hidden="true">→</span>
               </Link>

@@ -5,13 +5,13 @@ const ForOrganizations = () => {
     {
       id: 1,
       title: "Insurance Companies",
-      description: "Launch parametric crop and livestock insurance products without building infrastructure from scratch. Leverage our blockchain-powered platform, weather and vegetation data integrations, and automated claims to go to market in weeks, not years.",
+      description: "Launch parametric crop and livestock insurance products without building infrastructure from scratch. Use our platform, data integrations, and automated payouts to go to market in weeks, not years.",
       image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=500&fit=crop",
     },
     {
       id: 2,
       title: "Agricultural Cooperatives",
-      description: "Protect member farmers and pastoralists with pooled risk management. Offer affordable, automated crop and livestock insurance to your communities with transparent on-chain tracking and instant payouts through local mobile money and banking rails.",
+      description: "Protect member farmers and pastoralists with pooled risk management. Offer affordable, automated crop and livestock insurance to your communities with transparent, fully auditable tracking and instant payouts through local mobile money and banking rails.",
       image: "https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&h=500&fit=crop",
     },
     {
@@ -23,7 +23,7 @@ const ForOrganizations = () => {
     {
       id: 4,
       title: "NGOs & Development Organizations",
-      description: "Deploy climate resilience programs with transparent fund tracking. Every premium, payout, and fee is verifiable on-chain, providing full accountability for donor-funded initiatives.",
+      description: "Deploy climate resilience programs with transparent fund tracking. Every premium, payout, and fee is independently verifiable, providing full accountability for donor-funded initiatives.",
       image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&h=500&fit=crop",
     }
   ];

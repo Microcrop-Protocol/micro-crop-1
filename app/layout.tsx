@@ -26,14 +26,14 @@ export const metadata: Metadata = {
     template: "%s — MicroCrop",
   },
   description:
-    "MicroCrop enables insurance companies, cooperatives, agri-lenders, and NGOs worldwide to launch automated, blockchain-powered parametric crop and livestock insurance for farmers and pastoralists. Launching first in Africa, built for every market exposed to climate risk.",
+    "MicroCrop enables insurance companies, cooperatives, agri-lenders, and NGOs worldwide to launch automated parametric crop and livestock insurance for farmers and pastoralists. Launching first in Africa, built for every market exposed to climate risk.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "MicroCrop — Global Parametric Insurance Infrastructure",
     description:
-      "Automated, blockchain-powered parametric crop & livestock insurance infrastructure for farmers and pastoralists worldwide.",
+      "Automated parametric crop & livestock insurance infrastructure for farmers and pastoralists worldwide.",
     siteName: "MicroCrop",
     type: "website",
     url: "https://microcrop.app",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "MicroCrop — Global Parametric Insurance Infrastructure",
     description:
-      "Automated, blockchain-powered parametric crop & livestock insurance infrastructure for farmers and pastoralists worldwide.",
+      "Automated parametric crop & livestock insurance infrastructure for farmers and pastoralists worldwide.",
   },
   robots: {
     index: true,
@@ -65,7 +65,7 @@ const jsonLd = [
     url: "https://microcrop.app",
     logo: "https://microcrop.app/img/micro-crop-background.jpg",
     description:
-      "Global infrastructure layer for parametric crop and livestock insurance. MicroCrop enables insurers, cooperatives, agri-lenders, and NGOs to launch automated, blockchain-powered insurance products for farmers and pastoralists worldwide.",
+      "Global infrastructure layer for parametric crop and livestock insurance. MicroCrop enables insurers, cooperatives, agri-lenders, and NGOs to launch automated insurance products for farmers and pastoralists worldwide.",
     foundingDate: "2024",
     founders: [
       { "@type": "Person", name: "Mary Gathoni", email: "gathoni@microcrop.app" },

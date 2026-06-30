@@ -10,20 +10,20 @@ const PlatformFeatures = () => {
     },
     {
       id: 2,
-      title: "Risk Pool Management",
-      description: "Each partner gets their own on-chain risk pool deployed on Base with real-time liquidity dashboards. Monitor premiums collected, claims paid, and pool health at a glance.",
+      title: "Coverage & Fund Management",
+      description: "Each partner gets their own dedicated coverage infrastructure with real-time dashboards. Monitor premiums collected, claims paid, and fund health at a glance.",
       image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=500&fit=crop",
     },
     {
       id: 3,
       title: "Automated Damage Assessment",
-      description: "Chainlink oracles, WeatherXM ground stations, NDVI vegetation indices, and satellite data from Planet and Sentinel combine to deliver accurate, automated crop and livestock loss assessments — no manual claims required.",
+      description: "Index triggers — drought and flood for crops, forage and vegetation conditions for livestock — drive automated loss assessments. No manual claims, no field visits.",
       image: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=800&h=500&fit=crop",
     },
     {
       id: 4,
       title: "Instant Payouts",
-      description: "Smart contract triggers send payouts directly to farmers through local mobile money and banking rails. Fully automated, transparent, and verifiable on-chain.",
+      description: "Automated triggers send payouts directly to farmers through local mobile money and banking rails. Fully automated, transparent, and independently verifiable.",
       image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=500&fit=crop",
     },
     {

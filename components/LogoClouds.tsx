@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const LogoClouds = () => {
   return (
-    <div className="bg-[#1D5B37] py-24 sm:py-32">
+    <div className="bg-gradient-to-br from-emerald-700 to-teal-700 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Backed by Protocol Labs — understated credibility lockup */}
         <div className="flex flex-col items-center">

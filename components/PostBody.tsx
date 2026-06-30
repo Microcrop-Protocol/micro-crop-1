@@ -13,10 +13,13 @@ export default function PostBody({ markdown }: PostBodyProps) {
         remarkPlugins={[remarkGfm]}
         rehypePlugins={[rehypeSanitize]}
         components={{
+          // The page already renders the post title as the single <h1>; render
+          // any in-body markdown "# heading" as an <h2> (styled like an h1) to
+          // avoid a duplicate top-level heading on the post page.
           h1: ({ children }) => (
-            <h1 className="mt-12 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            <h2 className="mt-12 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               {children}
-            </h1>
+            </h2>
           ),
           h2: ({ children }) => (
             <h2 className="mt-12 text-2xl font-semibold tracking-tight text-gray-900 sm:text-3xl">

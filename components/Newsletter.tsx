@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function PartnerCTA() {
   return (
-    <div id="contact" className="relative bg-gray-900 overflow-hidden">
+    <section id="contact" aria-labelledby="contact-heading" className="relative bg-gray-900 overflow-hidden">
       <Image
         src="/img/newsletter-bg.jpg"
         alt="Agricultural field background"
@@ -14,7 +14,7 @@ export default function PartnerCTA() {
       <div className="absolute inset-0 bg-gradient-to-br from-transparent to-black" />
       <div className="relative mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="relative isolate overflow-hidden px-6 py-24 sm:rounded-3xl sm:px-24 xl:py-32">
-          <h2 className="mx-auto max-w-2xl text-center text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          <h2 id="contact-heading" className="mx-auto max-w-2xl text-center text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Ready to Launch Parametric Crop & Livestock Insurance?
           </h2>
           <p className="mx-auto mt-2 max-w-xl text-center text-lg leading-8 text-gray-100">
@@ -60,6 +60,6 @@ export default function PartnerCTA() {
           </svg>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

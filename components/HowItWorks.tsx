@@ -39,12 +39,12 @@ export default function HowItWorks() {
   const [openIndex, setOpenIndex] = useState(0)
 
   return (
-    <div className="bg-white">
+    <section aria-labelledby="how-it-works-heading" className="bg-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 py-24">
         <div className="mx-auto max-w-5xl">
           <div className='flex flex-col justify-around items-center mb-20 text-center'>
             <p className='text-xl text-emerald-700 font-semibold mb-4'>How MicroCrop Works</p>
-            <h2 className="text-3xl sm:text-5xl font-bold leading-tight tracking-tight text-gray-900 mb-6">Partner Onboarding in Four Steps</h2>
+            <h2 id="how-it-works-heading" className="text-3xl sm:text-5xl font-bold leading-tight tracking-tight text-gray-900 mb-6">Partner Onboarding in Four Steps</h2>
             <p className='text-lg text-gray-600 max-w-3xl'>From organization setup to automated payouts, MicroCrop provides the end-to-end infrastructure your team needs to launch and manage parametric crop and livestock insurance at scale.</p>
           </div>
           <dl className="space-y-6">
@@ -88,6 +88,6 @@ export default function HowItWorks() {
           </dl>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

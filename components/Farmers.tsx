@@ -41,11 +41,11 @@ const PlatformFeatures = () => {
   ];
 
   return (
-    <div id="platform" className="bg-white py-24 sm:py-32 font-poppins">
+    <section id="platform" aria-labelledby="platform-heading" className="bg-white py-24 sm:py-32 font-poppins">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center mb-16">
           <p className="text-lg font-semibold text-emerald-700 mb-2">Platform Capabilities</p>
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
+          <h2 id="platform-heading" className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
             Give Your Farmers: No Paperwork. No Delays. Fair Payouts.
           </h2>
           <p className="text-lg leading-8 text-gray-600">
@@ -83,7 +83,7 @@ const PlatformFeatures = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

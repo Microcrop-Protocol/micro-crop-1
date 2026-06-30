@@ -4,8 +4,8 @@ import Navbar from '@/components/Navbar'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'About — The Team Building Global Parametric Insurance Infrastructure',
-  description: 'Meet the founders of MicroCrop — Mary Gathoni and Moses Timbwa — and the mission to make parametric crop and livestock insurance accessible to farmers and pastoralists worldwide.',
+  title: { absolute: 'About MicroCrop — Parametric Insurance Infrastructure' },
+  description: 'Meet the founders of MicroCrop, Mary Gathoni and Moses Timbwa, and the mission to make parametric crop and livestock insurance accessible to farmers worldwide.',
   alternates: {
     canonical: '/about',
   },

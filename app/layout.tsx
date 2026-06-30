@@ -27,6 +27,21 @@ export const metadata: Metadata = {
   },
   description:
     "MicroCrop enables insurance companies, cooperatives, agri-lenders, and NGOs worldwide to launch automated parametric crop and livestock insurance for farmers and pastoralists. Launching first in Africa, built for every market exposed to climate risk.",
+  keywords: [
+    "parametric insurance",
+    "crop insurance",
+    "livestock insurance",
+    "index insurance",
+    "agricultural insurance",
+    "climate risk",
+    "insurance infrastructure",
+    "agri-lenders",
+    "cooperatives",
+    "Africa",
+  ],
+  authors: [{ name: "MicroCrop" }],
+  creator: "MicroCrop",
+  publisher: "MicroCrop",
   alternates: {
     canonical: "/",
   },
@@ -71,6 +86,12 @@ const jsonLd = [
       { "@type": "Person", name: "Mary Gathoni", email: "gathoni@microcrop.app" },
       { "@type": "Person", name: "Moses Timbwa", email: "moses@microcrop.app" },
     ],
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "sales",
+      email: "support@microcrop.app",
+      url: "https://microcrop.app",
+    },
     sameAs: [
       "https://www.linkedin.com/company/microcrop-protocol",
       "https://twitter.com/microcrop_app",

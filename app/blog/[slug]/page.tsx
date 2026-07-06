@@ -15,6 +15,17 @@ const dateFormatter = new Intl.DateTimeFormat("en-US", {
   day: "numeric",
 });
 
+// Serialize JSON-LD so it cannot break out of the surrounding <script> tag.
+// JSON.stringify does not escape "</script>", "<!--", U+2028/U+2029, etc.,
+// which would otherwise allow stored-XSS via post fields (title/excerpt/author).
+const jsonLdSafe = (data: unknown) =>
+  JSON.stringify(data)
+    .replace(/</g, "\\u003c")
+    .replace(/>/g, "\\u003e")
+    .replace(/&/g, "\\u0026")
+    .replace(/\u2028/g, "\\u2028")
+    .replace(/\u2029/g, "\\u2029");
+
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
@@ -95,7 +106,7 @@ function PostJsonLd({ post }: { post: Post }) {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      dangerouslySetInnerHTML={{ __html: jsonLdSafe(data) }}
     />
   );
 }
@@ -123,7 +134,7 @@ function BreadcrumbJsonLd({ post }: { post: Post }) {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      dangerouslySetInnerHTML={{ __html: jsonLdSafe(data) }}
     />
   );
 }

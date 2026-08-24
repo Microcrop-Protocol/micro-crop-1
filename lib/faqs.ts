@@ -5,28 +5,28 @@ export type Faq = {
 
 export const faqs: Faq[] = [
   {
-    question: "What is MicroCrop and who is it for?",
+    question: "What is MicroCrop for?",
     answer:
-      "MicroCrop is a B2B infrastructure platform that enables insurance companies, agricultural cooperatives, agri-lenders, MFIs, and NGOs worldwide to offer parametric crop and livestock insurance to farmers and pastoralists. We provide the technology stack — you bring the distribution. Our flagship markets are in Africa, with the platform designed to scale to any market exposed to climate risk.",
+      "MicroCrop helps insurance and distribution teams offer practical crop and livestock climate cover to the customers and communities they serve.",
   },
   {
-    question: "How does the partner onboarding process work?",
+    question: "How do we get started?",
     answer:
-      "Our team sets up your organization on the platform, provisions your dedicated coverage infrastructure, and configures your white-label environment. From there, you can add staff accounts, import farmers (individually or in bulk with KYC), and define your coverage parameters. Most partners are operational within weeks.",
+      "We begin by learning about your customers, products, and operating context. From there, we agree on a focused starting point and help your team prepare the customer experience.",
   },
   {
-    question: "How are payouts triggered?",
+    question: "How do customers receive support?",
     answer:
-      "Payouts are index-triggered, not based on individual claims. For crops, triggers track drought and flood conditions. For livestock, they track forage and vegetation health. When an index crosses a predefined threshold, payouts process automatically — no field visits, no manual claims to file.",
+      "When customers qualify for support, payouts can be sent through familiar mobile money and banking channels, with clear communication throughout the process.",
   },
   {
-    question: "What does the pricing model look like?",
+    question: "How is pricing handled?",
     answer:
-      "MicroCrop charges a simple platform fee on premiums, collected automatically. Partners set their own premium pricing for farmers. There are no hidden fees — the revenue model is fully transparent and independently verifiable. Contact us for details on pricing.",
+      "Pricing depends on the product, customer base, and support your team needs. We will walk through the options during a partner conversation.",
   },
   {
-    question: "Can we integrate MicroCrop with our existing systems?",
+    question: "Can MicroCrop fit our existing operations?",
     answer:
-      "Yes. MicroCrop is API-first with a RESTful API for custom frontend integrations. You can build on top of our infrastructure using your own interfaces, or use our ready-made dashboards. We also support CSV exports for compliance and reporting needs.",
+      "Yes. We shape the setup around the tools, channels, and workflows your team already uses.",
   },
 ];

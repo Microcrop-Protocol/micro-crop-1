@@ -38,24 +38,24 @@ const HeroSection = () => {
       <div className="flex flex-1 items-center px-5 sm:px-8 md:px-20 py-20 sm:py-28 md:py-32">
         <article className="text-white flex flex-col">
           <p className="mb-5 text-sm sm:text-base font-semibold uppercase tracking-wide text-gray-100">
-            Backed by Protocol Labs
+            Climate cover, made practical
           </p>
           <h1 className="text-3xl sm:text-4xl md:text-7xl xl:text-8xl font-semibold leading-tight text-balance">
-            Crop &amp; Livestock Insurance{' '}
+            A better way to protect{' '}
             <br className="hidden md:block" />
-            That Pays Out Automatically{' '}
+            the people who grow our food{' '}
             <br className="hidden md:block" />
-            When Drought or Flood Hits
+            through every season
           </h1>
           <p className="max-w-[800px] mt-6 mb-10 sm:mt-8 sm:mb-12 text-lg md:text-xl text-gray-100 text-pretty">
-            Insurers, cooperatives, lenders, and agtech platforms run parametric crop and livestock insurance on MicroCrop. Farmers pay premiums by mobile money and get paid automatically when an index trigger fires. No claims to file. Built for every market exposed to climate risk.
+            MicroCrop helps insurance teams offer crop and livestock cover that is easier to launch, simpler to understand, and built around the payment habits of real customers.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href="#contact"
               className="inline-flex items-center gap-2 py-3 px-6 rounded-full text-white font-semibold hover:bg-white hover:text-black transition-[background-color,color,border-color] duration-300 bg-white/10 backdrop-blur-lg border border-white/20 hover:border-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black/40 group w-fit"
             >
-              <span>Request a Demo</span>
+              <span>Request a partner demo</span>
               <ArrowRightCircleIcon
                 aria-hidden="true"
                 className="h-5 w-5 transition-transform duration-300 motion-reduce:transition-none group-hover:translate-x-1"
@@ -65,7 +65,7 @@ const HeroSection = () => {
               href="#platform"
               className="inline-flex items-center gap-2 py-3 px-6 rounded-full text-white font-semibold hover:bg-white hover:text-black transition-[background-color,color,border-color] duration-300 border border-white/40 hover:border-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black/40 group w-fit"
             >
-              <span>Explore Platform</span>
+              <span>See what partners can offer</span>
             </Link>
           </div>
         </article>

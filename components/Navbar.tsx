@@ -95,7 +95,7 @@ export default function Navbar() {
                   );
                 })}
                 <Link href="#contact" className={`py-2.5 px-5 rounded-full border ${getBorderColor()} ${getTextColor()} font-semibold ${getButtonHoverBg()} hover:cursor-pointer transition-all whitespace-nowrap`}>
-                  Request a Demo
+                  Partner demo
                 </Link>
               </div>
               <div className="flex items-center lg:hidden">

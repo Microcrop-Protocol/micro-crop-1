@@ -24,7 +24,7 @@ const LogoClouds = () => {
         <div className="mx-auto mt-12 h-px w-full max-w-xs bg-white/10 sm:mt-16" />
 
         <h2 id="technology-stack-heading" className="mt-12 text-center text-lg/8 font-semibold text-white sm:mt-16">
-          Our Technology Stack
+          Technology that supports the experience
         </h2>
         <div className="mx-auto mt-10 flex max-w-2xl flex-wrap items-center justify-center gap-x-12 gap-y-8 sm:gap-x-16 lg:gap-x-20">
           <Image

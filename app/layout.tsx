@@ -21,23 +21,18 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL("https://microcrop.app"),
   title: {
-    default:
-      "MicroCrop — Global Parametric Crop & Livestock Insurance Infrastructure",
-    template: "%s — MicroCrop",
+    default: "MicroCrop | Climate cover that works for farmers",
+    template: "%s | MicroCrop",
   },
   description:
-    "MicroCrop enables insurance companies, cooperatives, agri-lenders, and NGOs worldwide to launch automated parametric crop and livestock insurance for farmers and pastoralists. Launching first in Africa, built for every market exposed to climate risk.",
+      "MicroCrop helps insurance and distribution teams offer clear, practical crop and livestock climate cover to the customers they serve.",
   keywords: [
-    "parametric insurance",
     "crop insurance",
     "livestock insurance",
-    "index insurance",
     "agricultural insurance",
     "climate risk",
-    "insurance infrastructure",
-    "agri-lenders",
-    "cooperatives",
-    "Africa",
+    "climate cover",
+    "farmer protection",
   ],
   authors: [{ name: "MicroCrop" }],
   creator: "MicroCrop",
@@ -46,9 +41,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "MicroCrop — Global Parametric Insurance Infrastructure",
+    title: "MicroCrop — Climate cover that works for customers",
     description:
-      "Automated parametric crop & livestock insurance infrastructure for farmers and pastoralists worldwide.",
+      "A clearer way for insurance teams to offer crop and livestock climate cover.",
     siteName: "MicroCrop",
     type: "website",
     url: "https://microcrop.app",
@@ -56,9 +51,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "MicroCrop — Global Parametric Insurance Infrastructure",
+    title: "MicroCrop — Climate cover that works for customers",
     description:
-      "Automated parametric crop & livestock insurance infrastructure for farmers and pastoralists worldwide.",
+      "A clearer way for insurance teams to offer crop and livestock climate cover.",
   },
   robots: {
     index: true,
@@ -80,7 +75,7 @@ const jsonLd = [
     url: "https://microcrop.app",
     logo: "https://microcrop.app/img/micro-crop-background.jpg",
     description:
-      "Global infrastructure layer for parametric crop and livestock insurance. MicroCrop enables insurers, cooperatives, agri-lenders, and NGOs to launch automated insurance products for farmers and pastoralists worldwide.",
+      "MicroCrop helps insurance and distribution teams offer practical crop and livestock climate cover to the customers they serve.",
     foundingDate: "2024",
     founders: [
       { "@type": "Person", name: "Mary Gathoni", email: "gathoni@microcrop.app" },

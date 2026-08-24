@@ -4,7 +4,7 @@ const navigation = {
   company: [
     { name: 'About Us', href: '/about' },
     { name: 'Blog', href: '/blog' },
-    { name: 'Request a Demo', href: '#contact' },
+    { name: 'Partner demo', href: '#contact' },
   ],
   social: [
     {

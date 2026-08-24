@@ -4,38 +4,38 @@ const PlatformFeatures = () => {
   const features = [
     {
       id: 1,
-      title: "White-Label Onboarding",
-      description: "Bulk farmer registration, KYC management, and staff account provisioning. Each partner gets a branded experience with full control over their organization's workflow.",
+      title: "Branded customer journeys",
+      description: "Give customers a clear, familiar path from learning about cover to staying informed throughout the season.",
       image: "https://images.unsplash.com/photo-1531973576160-7125cd663d86?w=800&h=500&fit=crop",
     },
     {
       id: 2,
-      title: "Coverage & Fund Management",
-      description: "Each partner gets their own dedicated coverage infrastructure with real-time dashboards. Monitor premiums collected, claims paid, and fund health at a glance.",
+      title: "Simple policy visibility",
+      description: "Help teams and customers understand active cover, important dates, and the support available to them.",
       image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=500&fit=crop",
     },
     {
       id: 3,
-      title: "Automated Damage Assessment",
-      description: "Index triggers — drought and flood for crops, forage and vegetation conditions for livestock — drive automated loss assessments. No manual claims, no field visits.",
+      title: "Clear support when conditions change",
+      description: "Make it easier to keep customers informed when weather and seasonal conditions affect their livelihoods.",
       image: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=800&h=500&fit=crop",
     },
     {
       id: 4,
-      title: "Instant Payouts",
-      description: "Automated triggers send payouts directly to farmers through local mobile money and banking rails. Fully automated, transparent, and independently verifiable.",
+      title: "Local payout options",
+      description: "Reach customers through the mobile money and bank accounts they already rely on in daily life.",
       image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=500&fit=crop",
     },
     {
       id: 5,
-      title: "Analytics Dashboards",
-      description: "Platform and org-level dashboards with revenue tracking, policy analytics, farmer demographics, and risk exposure metrics. Full CSV export for compliance and auditing.",
+      title: "A clearer view of your book",
+      description: "Give decision-makers useful context on participation, service demand, and portfolio performance.",
       image: "https://images.unsplash.com/photo-1543286386-713bdd548da4?w=800&h=500&fit=crop",
     },
     {
       id: 6,
-      title: "API-First Architecture",
-      description: "RESTful API for custom frontend integrations. Build your own interfaces on top of MicroCrop's infrastructure, or use our ready-made dashboard out of the box.",
+      title: "Fits your existing operations",
+      description: "Connect the customer experience to the tools and workflows your team already uses.",
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&h=500&fit=crop",
     }
   ];
@@ -44,12 +44,12 @@ const PlatformFeatures = () => {
     <section id="platform" aria-labelledby="platform-heading" className="bg-white py-24 sm:py-32 font-poppins">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center mb-16">
-          <p className="text-lg font-semibold text-emerald-700 mb-2">Platform Capabilities</p>
+          <p className="text-lg font-semibold text-emerald-700 mb-2">The partner experience</p>
           <h2 id="platform-heading" className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
-            Give Your Farmers: No Paperwork. No Delays. Fair Payouts.
+            Make protection easier to offer and easier to use.
           </h2>
           <p className="text-lg leading-8 text-gray-600">
-            Everything your organization needs to launch and manage parametric crop and livestock insurance products — from farmer onboarding to automated payouts.
+            Give your team the tools to offer practical crop and livestock cover, from the first customer conversation through ongoing support.
           </p>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-12 lg:mx-0 lg:max-w-none lg:grid-cols-3">

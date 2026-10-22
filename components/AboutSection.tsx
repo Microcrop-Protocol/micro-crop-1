@@ -71,9 +71,6 @@ export default function AboutSection() {
                 height={48}
               />
             </div>
-            <p className="mx-auto mt-10 max-w-2xl text-sm leading-6 text-emerald-50/80">
-              Weather and satellite data from ERA5 (via Open-Meteo) and <span className="whitespace-nowrap">Copernicus Sentinel-2</span>.
-            </p>
             <div className="absolute -top-24 right-0 -z-10 transform-gpu blur-3xl" aria-hidden="true">
               <div
                 className="aspect-[1404/767] w-[87.75rem] bg-gradient-to-r from-emerald-300 to-teal-700 opacity-25"

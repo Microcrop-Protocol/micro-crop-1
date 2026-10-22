@@ -51,9 +51,6 @@ const LogoClouds = () => {
             className="h-10 w-auto object-contain sm:h-12"
           />
         </div>
-        <p className="mt-10 text-center text-sm/6 text-white/70">
-          Weather and satellite data from ERA5 (via Open-Meteo) and <span className="whitespace-nowrap">Copernicus Sentinel-2</span>.
-        </p>
       </div>
     </section>
   )

@@ -50,11 +50,18 @@ export default function AboutSection() {
             </p>
             <div className="mx-auto mt-16 flex max-w-2xl flex-wrap items-center justify-center gap-x-12 gap-y-10 sm:mt-20 sm:gap-x-16 lg:gap-x-20">
               <Image
-                className="h-10 w-auto object-contain sm:h-12"
-                src="/img/Base.png"
-                alt="Base"
-                width={158}
-                height={48}
+                className="h-8 w-auto object-contain sm:h-10"
+                src="/logos/stellar-white.png"
+                alt="Stellar"
+                width={1200}
+                height={300}
+              />
+              <Image
+                className="h-8 w-auto object-contain sm:h-10"
+                src="/logos/lit-protocol.svg"
+                alt="Lit Protocol"
+                width={62}
+                height={46}
               />
               <Image
                 className="h-10 w-auto object-contain sm:h-12"
@@ -64,6 +71,9 @@ export default function AboutSection() {
                 height={48}
               />
             </div>
+            <p className="mx-auto mt-10 max-w-2xl text-sm leading-6 text-emerald-50/80">
+              Weather and satellite data from ERA5 (via Open-Meteo) and <span className="whitespace-nowrap">Copernicus Sentinel-2</span>.
+            </p>
             <div className="absolute -top-24 right-0 -z-10 transform-gpu blur-3xl" aria-hidden="true">
               <div
                 className="aspect-[1404/767] w-[87.75rem] bg-gradient-to-r from-emerald-300 to-teal-700 opacity-25"

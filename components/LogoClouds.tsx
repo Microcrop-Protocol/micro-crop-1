@@ -28,11 +28,19 @@ const LogoClouds = () => {
         </h2>
         <div className="mx-auto mt-10 flex max-w-2xl flex-wrap items-center justify-center gap-x-12 gap-y-8 sm:gap-x-16 lg:gap-x-20">
           <Image
-            alt="Base"
-            src="/img/Base.png"
-            width={158}
-            height={48}
-            className="h-10 w-auto object-contain sm:h-12"
+            alt="Stellar"
+            src="/logos/stellar-white.png"
+            width={1200}
+            height={300}
+            className="h-8 w-auto object-contain sm:h-10"
+          />
+
+          <Image
+            alt="Lit Protocol"
+            src="/logos/lit-protocol.svg"
+            width={62}
+            height={46}
+            className="h-8 w-auto object-contain sm:h-10"
           />
 
           <Image
@@ -43,6 +51,9 @@ const LogoClouds = () => {
             className="h-10 w-auto object-contain sm:h-12"
           />
         </div>
+        <p className="mt-10 text-center text-sm/6 text-white/70">
+          Weather and satellite data from ERA5 (via Open-Meteo) and <span className="whitespace-nowrap">Copernicus Sentinel-2</span>.
+        </p>
       </div>
     </section>
   )
